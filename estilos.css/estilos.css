@@ -1,0 +1,628 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html {background-image: url(../multimedia/background.jpg);
+}
+
+/*Header*/
+header{
+    background-image: url(../multimedia/headermain.jpg);
+    position: fixed;  
+    width:100vw;
+    height:auto;
+    z-index: 99;
+}
+
+.menu li{
+    display:inline-block;
+    position:relative;
+    font-size: 20px;
+    padding:0 10px;
+}
+
+.menu li a{
+    text-decoration: none;
+}
+
+.submenu{
+    display:none;
+    position: absolute;
+}
+
+.submenu li{
+    display: block;
+    background-color: rgb(255, 255, 255)
+}
+
+/* .menu li:hover ul{
+    display:block;
+} */
+ 
+
+/*Footer*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    background-image: url(../multimedia/headermain.jpg) ; 
+    width: 100vw;
+    height: auto;
+}
+
+footer img {
+    height: 50px;    
+    width: 50px;
+}
+
+footer p{ 
+    display:inline;
+    padding:10px;
+}
+
+footer li a {
+    text-decoration: none;
+}
+
+.listafooter{
+list-style-type: none;
+font-size: large;
+font-weight: bold;
+padding:30px;
+}
+
+footer div{
+    height:32px;
+    width: 170px;
+   
+}
+footer li{
+    display:inline-block
+}
+
+.footerlogo {
+    height: 80px;
+    width: 60px;
+    
+}
+
+/* Index */
+
+.indextitulo h1 {
+    text-align: center;
+    color:#000000 ;
+    font-size: 100px;
+    font-family: cursive;
+}
+
+.carrouseldeimagenes img{
+    height: 500px;
+    width: 450px;
+    border-radius: 5px;
+    }
+
+.publicidadindex img{
+    height: 1500px;
+    width: 400px;
+}
+
+.paginaprincipal{ 
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 0.5fr 0.5fr 3fr 0.1fr;
+grid-template-areas: 
+"navegacion navegacion navegacion navegacion"
+"titulo titulo titulo publicidad"
+"carrousel carrousel carrousel publicidad"
+"footer footer footer footer";
+}
+
+.header{
+    grid-area: navegacion;
+}
+
+.titulomainindex{
+    grid-area: titulo;
+    align-self: start;
+}
+
+.cuerpoprincipalindex{
+    grid-area: carrousel;
+    display:flex;
+    flex-direction: row;
+    align-self: start;
+    justify-self:center;
+}
+
+.publicidadindex{
+    grid-area: publicidad;
+}
+
+.footer{
+    grid-area: footer;
+}
+/* La experiencia */
+
+.laexperiencia h1{
+    text-align: center;
+    color:#000000 ;
+    font-size: 100px;
+    padding-top:152px;
+    font-family: cursive;
+}
+.laexperiencia h2{
+    text-align: center;
+    color:#000000 ;
+    font-size: 50px;
+    font-family: cursive;
+}
+.fotoinfolocal img{
+    height: 500px;
+    width: 600px;
+    border-radius: 5px;
+    position: relative;
+    left:250px;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+.fotoinfolocal p{
+    position: absolute;
+    top:570px;
+    right:250px;
+    height: 500px;
+    width: 600px;
+}
+
+/* Shop */
+
+.shoptitulo{
+    text-align: center;
+    font-family: cursive;
+    position: relative;
+    top:120px;
+    font-size: 100px;
+
+}
+
+.titulocategoriashop {
+    font-family: cursive;
+    text-align: center;
+}
+
+.bodyshop{
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-areas:
+    "navegacion"
+    "shopimagenes"
+    "footer";
+    align-content: center;
+}
+
+.header{
+    grid-area:navegacion
+}
+
+.footer{
+    grid-area:footer
+ }
+
+.shopimagenes{
+    grid-area:shopimagenes;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(5, 250px);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 100px 0px;
+    justify-content: center;
+    align-content:start;
+    grid-template-areas: 
+    "figuras figuras peluches peluches"
+    "figuras figuras indumentaria indumentaria"
+    "libreria libreria indumentaria indumentaria"
+    "tecnologia tecnologia tecnologia tecnologia";
+}
+
+.figuras{
+    grid-area:figuras;
+    
+}
+
+.figuras img{
+    height: 500px;
+    width: 500px;
+}
+
+.peluches{
+    grid-area:peluches;
+}
+
+.peluches img{
+    height: 240px;
+    width: 500px;
+}
+
+.indumentaria{
+    grid-area:indumentaria;
+}
+
+.indumentaria img{
+    height: 500px;
+    width: 500px;
+}
+.tecnologia{
+    grid-area: tecnologia;
+}
+
+.tecnologia img{
+    height: 250px;
+    width: 1025px;
+}
+
+.libreria{
+    grid-area:libreria;
+}
+
+.libreria img{
+    height: 240px;
+    width: 500px;
+}
+
+
+
+/* Nosotros */
+
+.nosotrostitulo h1{
+    text-align: center;
+    color:#000000 ;
+    font-size: 80px;
+    padding-top:152px;
+    font-family: cursive;
+}
+
+.nosotros{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nosotros div{
+    display:flex;
+    flex-direction:row;
+    height: 200px;
+    font-family: cursive;
+    margin:40px 50px;
+    align-items: center;
+    }
+
+
+    .empleado1{
+        border-style:dotted;
+        border-color: blue;
+    }
+
+    .empleado1 img{
+        height: 150px;
+        width: 170px;
+    }
+
+    .empleado2{
+        border-style:dotted;
+        border-color: blue;
+    }
+
+    .empleado2 img{
+        height: 150px;
+        width: 170px;
+    }
+
+    .empleado3{
+        border-style:dotted;
+        border-color: blue;
+    }
+
+    .empleado3 img{
+        height: 170px;
+        width: 150px;
+    }
+
+.ubicacion {
+ margin:20px;
+ padding:10px;
+ position: relative;
+ left:750px;
+}
+
+.ubicacion h1 {
+    font-family: cursive;
+}
+
+.nuestramusica {
+    position: relative;
+    left:750px
+}
+
+@media screen and (max-width:768px) {
+
+    /* Index */
+    
+.indextitulo h1 {
+    text-align: center;
+    color:#000000 ;
+    font-size: 60px;
+    font-family: cursive;
+}
+
+.carrouseldeimagenes img{
+    height: 300px;
+    width: 250px;
+    border-radius: 5px;
+    }
+
+.publicidadindex img{
+    height: 800px;
+    width: 150px;
+}
+
+.paginaprincipal{ 
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 0.5fr 0.5fr 3fr 0.1fr;
+grid-template-areas: 
+"navegacion navegacion navegacion navegacion"
+"titulo titulo titulo publicidad"
+"carrousel carrousel carrousel publicidad"
+"footer footer footer footer";
+}
+
+.header{
+    background-image: url(../multimedia/headermain.jpg);
+    position: fixed;  
+    width:100vw;
+    z-index: 99;
+    grid-area: navegacion;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* .menu{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position: relative;
+    left: 200px;
+} */
+
+.menu li{
+    font-size: 25px;
+}
+.titulomainindex{
+    grid-area: titulo;
+    align-self: center;
+    padding-top:30px;
+}
+
+.cuerpoprincipalindex{
+    grid-area: carrousel;
+}
+
+.publicidadindex{
+    grid-area: publicidad;
+    padding-top:30px;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    background-image: url(../multimedia/headermain.jpg) ; 
+    width: 100vw;
+    height: 15vw;
+}
+
+
+
+.carrouseldeimagenes{
+    display:flex;
+    flex-direction: column;
+    align-self: start;
+    justify-self:center;   
+}
+   
+    /* Shop */
+    
+
+    .bodyshop{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start; 
+        align-content:center;
+    }
+
+    .shopimagenes{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+.shopimagenes p{
+    font-size: 50px;
+    text-align: center;
+}
+.tecnologia img{
+    height: 250px;
+    width: 500px;
+}
+
+.shoptitulo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 80px;
+    padding-top:80px;
+}
+}
+@media screen and (max-width:320px) {
+
+    /* Index */
+    
+.indextitulo h1 {
+    text-align: center;
+    color:#000000 ;
+    font-size: 45px;
+    font-family: cursive;
+    padding-top:100px;
+}
+
+
+
+.publicidadindex img{
+    display:none;
+    height: 800px;
+    width: 150px;
+    /* ¿cómo podría hacer para cambiar una imagen por otra? en vez de poner
+    banner vertical, me gustaría poner uno horizontal arriba del footer. 
+    pero eso va en el html */
+}
+
+
+.paginaprincipal{ 
+display:flex;
+flex-direction:column;
+}
+
+.header{
+    background-image: url(../multimedia/headermain.jpg);
+    position: fixed;  
+    width:100vw;
+    z-index: 99;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.menu li{
+    font-size: 20px;
+}
+
+
+.carrouseldeimagenes{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;   
+    justify-content: center;
+}
+.carrouseldeimagenes img{
+    height: 300px;
+    width: 200px;
+    border-radius: 5px;
+    }
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    background-image: url(../multimedia/headermain.jpg) ; 
+    width: 100vw;
+    height: 50vw;
+}
+
+footer img {
+    height: 30px;    
+    width: 30px;
+    padding:5px;
+}
+
+.footerredes{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.listafooter{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    font-size:17px;
+}
+    /* Shop */
+    
+
+    .bodyshop{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start; 
+        align-content:center;
+    }
+
+    .shopimagenes{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+.shopimagenes p{
+    font-size: 30px;
+    text-align: center;
+}
+
+.figuras img{
+    height: 180px;
+    width: 200px;
+}
+
+.peluches img{
+    height: 180px;
+    width: 300px;
+}
+
+.indumentaria img{
+    height: 180px;
+    width: 200px;
+}
+
+.tecnologia img{
+    height: 180px;
+    width: 300px;
+}
+
+.libreria img{
+    height: 180px;
+    width: 300px;
+}
+
+/* .tecnologia img{
+    height: 150px;
+    width: 300px;
+} */
+
+.shoptitulo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 50px;
+    padding-top:30px;
+}
+}
