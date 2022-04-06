@@ -6,62 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
     <link rel="shortcut icon" href="../multimedia/kawaiilogoico.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../estilos.css/estilos.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body>
+<div class="container-fluid m-0">
+
     <header class="header">
-        <a href="../index.html"><img src="../multimedia/kawaiilogotransp.png" widht=100 height=120 alt=""></a>
-        <nav class="nevegacion">
-            <ul class="menu">
-                <li><a href="laexperiencia.html">La experiencia</a>
-                    <!-- <ul class="submenu">
-                        <li> <a href="#"> El local</a></li>
-                        <li><a href="#"> El café</a></li>
-                        <li><a href="#"> Actividades especiales</a></li>
-                    </ul> -->
+        <div class="row">
+        <a href="../index.html"><img class="logoheader" src="../multimedia/kawaiilogotransp.png" alt=""></a>
+        <nav class="navegacion col-12 menuheader">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="../paginas/laexperiencia.html">La experiencia</a>
+                  </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../paginas/shop.html">Shop</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../paginas/nosotros.html">Nosotros</a>
                 </li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                </li>
+                <div class="container m-0 searchbox">
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                  </div>
+              </ul>
         </nav>
+    </div>
     </header>
 
-
-<div class="nosotrostitulo">
+<main class="row">
+    <div class="col-12 nosotrostitulo">
         <h1>Nosotros</h1>
-</div>
-       
-<main class="nosotros">
-
-    <div class="empleado1">
-        <img src="../multimedia/Nosotros/Nosotros 1.png" alt="Empleado1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sequi accusantium omnis nulla consectetur nobis asperiores adipisci dolores maxime similique? Enim praesentium, iure cum dicta est provident atque quod totam?</p>
-
     </div>
-
-    <div class="empleado2">
-      <img src="../multimedia/Nosotros/Nosotros 2.png" alt="Empleado2">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sequi accusantium omnis nulla consectetur nobis asperiores adipisci dolores maxime similique? Enim praesentium, iure cum dicta est provident atque quod totam?</p>
-    </div>
-        
-    <div class="empleado3">
-        <img src="../multimedia/Nosotros/Nosotros 3.png" alt="Empleado3">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sequi accusantium omnis nulla consectetur nobis asperiores adipisci dolores maxime similique? Enim praesentium, iure cum dicta est provident atque quod totam?</p>
-    </div>
-
+</div class="">
+    <div class="row row-cols-1 row-cols-md-4 g-4 nosotros">
+        <div class="col tarjetasnosotros">
+          <div class="card1 h-100">
+            <img src="../multimedia/Nosotros/Nosotros 1.png" class="card-img-top" alt="Empleado 1">
+            <div class="card-body1">
+              <h5 class="card-title">Empleado 1</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col tarjetasnosotros">
+          <div class="card1 h-100">
+            <img src="../multimedia/Nosotros/Nosotros 2.png" class="card-img-top" alt="Empleado 2">
+            <div class="card-body1">
+              <h5 class="card-title">Empleado 2</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col tarjetasnosotros">
+          <div class="card1 h-100">
+            <img src="../multimedia/Nosotros/Nosotros 3.png" class="card-img-top3" alt="Empleado 3">
+            <div class="card-body1">
+              <h5 class="card-title">Empleado 3</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
 </main>
-        
 
-    <div class="ubicacion">
-        <h1>¿Dónde estamos? corregir posición</h1>
+<section class="row ubicacionymusica">
+    <div class="col-12 ubicaciontitulo">
+        <h1>¿Dónde estamos? </h1>
+    </div>
+    <div class="col-12 ubicacion">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.779290605887!2d-58.44202348447564!3d-34.584450780464536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58d56c8d333%3A0xd4061fcc627a7a1e!2sJos%C3%A9%20Antonio%20Cabrera%205800-5728%2C%20C1414BHH%20CABA!5e0!3m2!1ses-419!2sar!4v1645983819492!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-
-    <div class="nuestramusica">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/172zA5Yn0YzayQWvEJuGAm?utm_source=generator&theme=0" width="40%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </div>
-
+</section>
 
     <footer class="footer">
         <img class="footerlogo" src="../multimedia/kawaiilogotransp.png" alt="Logo">
@@ -81,5 +120,9 @@
     </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>

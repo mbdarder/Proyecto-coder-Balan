@@ -1,6 +1,6 @@
 *{
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
 }
 
 html {background-color: azure;
@@ -11,12 +11,26 @@ header{
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(187,187,244,0.835171568627451) 55%, rgba(250,211,254,1) 100%);
     position: fixed;  
     width:100vw;
+    height:120px;
     z-index: 99;
 }
 
-.menu li{
-    display:inline-block;
-    position:relative;
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    padding-left: 100px;
+    height: 120px;
+}
+
+.searchbox{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.menu li{ 
     font-size: 20px;
     padding:0 10px;
 }
@@ -25,29 +39,22 @@ header{
     text-decoration: none;
 }
 
-.submenu{
-    display:none;
-    position: absolute;
-}
-
-.submenu li{
-    display: block;
-    background-color: rgb(255, 255, 255)
-}
-
 @keyframes logoheader{
     100% {animation:flip} /* creo que este keyframe está de más porque funciona
     aunque no esté */
 }
 .logoheader{
-    width:100px;
-    height:120px;
+    width:80px;
+    height:100px;
+    position:absolute;  
     animation-name:logoheader;
-    animation:flip;
+    animation:pulse;
     animation-iteration-count:calc(2);
     animation-timing-function: linear;
     animation-duration: 2s;
     animation-delay: 1s;
+    padding-left: 15px;
+    padding-top: 10px;
 }
 
 /* .menu li:hover ul{
@@ -68,8 +75,8 @@ footer{
 }
 
 footer img {
-    height: 50px;    
-    width: 50px;
+    height: 30px;    
+    width: 30px;
 }
 
 footer p{ 
@@ -105,90 +112,66 @@ footer li{
 
 /* Index */
 
-.indextitulo h1 {
+.titulomainindex h1 {
     text-align: center;
     color:#000000 ;
     font-size: 100px;
     font-family: cursive;
 }
 
-.indextitulo{
+.titulomainindex{
     display:flex;
     flex-direction:row;
     align-items: flex-end;  
     justify-content: center;
-    padding-top:80px;
+    padding-top:120px;
     padding-bottom:25px;
 }
-.puertaindex{
-    height:100px;
-    width:68px;
+
+.cuerpoprincipalindex{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-@keyframes caminanteindex{
-    0% {left:-380px;}
- 25% {left:-250px;}
- 50% {left: -150px;}
- 75% {left: 0px;}
- 95%{opacity:100}
- 96%{opacity:80}
- 97%{opacity:60}
- 98%{opacity:40}
- 99%{opacity:20}
-100% {left: 65px; opacity:0;/* animation:fadeOut */;}
-
-  /*   from {
-        margin-right: 0%;
-          }
-    
-      to {
-        margin-left:100%;
-         */
-    }
-
-.caminanteindex{
-position:relative;
-left:-400px;
-    width:70px;
-    height:90px;
-    transform: rotateY(180deg);
-    animation:fadeOut;
-    animation-name:caminanteindex;
-    animation-iteration-count:calc(1);
-    animation-timing-function: linear;
-    animation-duration: 15s;
-    animation-delay: 1s;
-}
 .imagenfiguraindex{
     height:500px;
     width:450px;
     border-radius: 5px;
-    transition: 2s;
     }
-
-.imagenfiguraindex:hover{
-    height: 600px;
-    width: 550px;
-}
 
 .imagenindumentariaindex{
     height:500px;
     width:450px;
     border-radius: 5px;
-    transition:2s;
+    }   
+
+.imagenpelucheindex{
+        height:500px;
+        width:450px;
+        border-radius: 5px; 
     }
 
-.imagenindumentariaindex:hover{
-    height: 600px;
-    width: 550px;;
+.imagentecnoindex{
+    height:500px;
+    width:450px;
+    border-radius: 5px;
 }
 
-.publicidadindex img{
-    height: 800px;
-    width: 200px;
-    padding-top:50px;
+.imagenlibreriaindex{
+    height:500px;
+    width:450px;
+    border-radius: 5px;
 }
 
+.tarjetasdeproductos{
+    width: 0px;
+    padding-bottom:50px;
+}
+
+
+    /* padding-top:50px; */
+/* 
 .paginaprincipal{ 
 display: grid;
 grid-template-columns: repeat(4, 1fr);
@@ -223,7 +206,9 @@ grid-template-areas:
 
 .footer{
     grid-area: footer;
-}
+} */
+
+
 /* La experiencia */
 
 .laexperiencia h1{
@@ -367,91 +352,126 @@ grid-template-areas:
 
 .nosotros{
     display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding-left:50px;
+    padding-top:20px;
+    
 }
 
-.nosotros div{
+    .card-img-top{
+        height:150px;
+        width:170px;
+    }
+
+    .card-img-top3{
+        height:170px;
+        width:150px;
+    }
+
+    .card1{
+        border-style:dotted;
+        border-color: blue;
+        width:450px; 
+        align-items: center;
+    }
+
+    .card-body1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+.ubicacion{
     display:flex;
-    flex-direction:row;
-    height: 200px;
-    font-family: cursive;
-    margin:40px 50px;
     align-items: center;
-    }
-
-
-    .empleado1{
-        border-style:dotted;
-        border-color: blue;
-    }
-
-    .empleado1 img{
-        height: 150px;
-        width: 170px;
-    }
-
-    .empleado2{
-        border-style:dotted;
-        border-color: blue;
-    }
-
-    .empleado2 img{
-        height: 150px;
-        width: 170px;
-    }
-
-    .empleado3{
-        border-style:dotted;
-        border-color: blue;
-    }
-
-    .empleado3 img{
-        height: 170px;
-        width: 150px;
-    }
-
-.ubicacion {
- margin:20px;
- padding:10px;
- position: relative;
- left:750px;
-}
-
-.ubicacion h1 {
+    padding:20px;
+    justify-content: center;
+}    
+.ubicaciontitulo {
+    text-align: center;
     font-family: cursive;
+    padding-top:60px;
 }
 
-.nuestramusica {
-    position: relative;
-    left:750px
-}
+
 
 @media screen and (max-width:768px) {
 
     /* Index */
     
-.indextitulo h1 {
-    text-align: center;
+.titulomainindex h1 {
     color:#000000 ;
     font-size: 60px;
     font-family: cursive;
+    display: flex;
+    align-items: center;
 }
 
+.carrouseldeimagenes{
+    margin:0px;
+    height:400px;
+    padding-bottom:100px;
+}
 .carrouseldeimagenes img{
-    height: 300px;
-    width: 250px;
-    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+     }
+
+.fotoscarrousel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-.publicidadindex img{
-    height: 800px;
-    width: 150px;
+    .imagenfiguraindex{
+        height:500px;
+        width:400px;
+        border-radius: 5px;
+        }
+    
+    .imagenindumentariaindex{
+        height:500px;
+        width:400px;
+        border-radius: 5px;
+        }   
+    
+    .imagenpelucheindex{
+            height:500px;
+            width:400px;
+            border-radius: 5px; 
+        }
+    
+    .imagentecnoindex{
+        height:500px;
+        width:400px;
+        border-radius: 5px;
+    }
+    
+    .imagenlibreriaindex{
+        height:500px;
+        width:400px;
+        border-radius: 5px;
+    }
+.cuerpoprincipalindex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.paginaprincipal{ 
+.tarjetasdeproductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:50px;
+}
+
+.searchbox{
+    display:none;
+}
+
+/* .paginaprincipal{ 
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-template-rows: 0.5fr 0.5fr 3fr 0.1fr;
@@ -460,10 +480,9 @@ grid-template-areas:
 "titulo titulo titulo publicidad"
 "carrousel carrousel carrousel publicidad"
 "footer footer footer footer";
-}
+} */
 
 .header{
-    background-image: url(../multimedia/headermain.jpg);
     position: fixed;  
     width:100vw;
     z-index: 99;
@@ -482,23 +501,18 @@ grid-template-areas:
     left: 200px;
 } */
 
-.menu li{
-    font-size: 25px;
+.menuheader li{
+    font-size: 15px;
 }
 .titulomainindex{
     grid-area: titulo;
     align-self: center;
-    padding-top:30px;
+    padding-top:120px;
 }
 
-.cuerpoprincipalindex{
+/* .cuerpoprincipalindex{
     grid-area: carrousel;
-}
-
-.publicidadindex{
-    grid-area: publicidad;
-    padding-top:30px;
-}
+} */
 
 .footer{
     grid-area: footer;
@@ -506,18 +520,13 @@ grid-template-areas:
     flex-direction: row;
     justify-content:space-between;
     align-items:center;
-    background-image: url(../multimedia/headermain.jpg) ; 
     width: 100vw;
     height: 15vw;
 }
 
-
-
-.carrouseldeimagenes{
-    display:flex;
-    flex-direction: column;
-    align-self: start;
-    justify-self:center;   
+.footer li{
+    font-size: 15px;
+    padding:5px;
 }
    
     /* Shop */
@@ -553,30 +562,78 @@ grid-template-areas:
     font-size: 80px;
     padding-top:80px;
 }
+
+/* Nosotros */
+.nosotrostitulo h1{
+    text-align: center;
+    color:#000000 ;
+    font-size: 60px;
+    padding-top:152px;
+    font-family: cursive;
+}
+
+.nosotros{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top:20px;
+    padding-left:0px;
+    
+}
+
+    .card-img-top{
+        height:150px;
+        width:170px;
+    }
+
+    .card-img-top3{
+        height:170px;
+        width:150px;
+    }
+
+    .card1{
+        display: flex;
+        border-style:dotted;
+        border-color: blue;
+        width:400px;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-body1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tarjetasnosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.ubicacion{
+    display:flex;
+    align-items: center;
+    padding:20px;
+    justify-content: center;
+}    
+.ubicaciontitulo {
+    text-align: center;
+    font-family: cursive;
+    padding-top:60px;
+}
 }
 @media screen and (max-width:320px) {
 
     /* Index */
     
-.indextitulo h1 {
+.titulomainindex h1 {
     text-align: center;
     color:#000000 ;
     font-size: 45px;
     font-family: cursive;
-    padding-top:100px;
+    padding-top:80px;
 }
-
-
-
-.publicidadindex img{
-    display:none;
-    height: 800px;
-    width: 150px;
-    /* ¿cómo podría hacer para cambiar una imagen por otra? en vez de poner
-    banner vertical, me gustaría poner uno horizontal arriba del footer. 
-    pero eso va en el html */
-}
-
 
 .paginaprincipal{ 
 display:flex;
@@ -584,46 +641,91 @@ flex-direction:column;
 }
 
 .header{
-    background-image: url(../multimedia/headermain.jpg);
-    position: fixed;  
+    position: fixed;
+    height: 170px;  
     width:100vw;
     z-index: 99;
     display:flex;
     flex-direction:row;
-    align-items: center;
-    justify-content: space-evenly;
-}
+    justify-content: flex-start;
+  }
 
-.menu{
+/* .menuheader{
     display:flex;
-    flex-direction:column;
-    align-items:center;
+    flex-direction:row;
+
+} */
+
+.menuheader ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex;
+    height: 170px;
+}
+.menuheader li{
+     font-size: 11px;
 }
 
-.menu li{
-    font-size: 20px;
-}
 
+.searchbox{
+    display: none;
+}
 
 .carrouseldeimagenes{
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;   
     justify-content: center;
+    padding-bottom:10px;
+    height:300px;
 }
-.carrouseldeimagenes img{
-    height: 300px;
-    width: 200px;
+
+.imagenfiguraindex{
+    height:90px;
+    width:250px;
     border-radius: 5px;
     }
+
+.imagenindumentariaindex{
+    height:90px;
+    width:250px;
+    border-radius: 5px;
+    }   
+
+.imagenpelucheindex{
+        height:90px;
+        width:250px;
+        border-radius: 5px; 
+    }
+
+.imagentecnoindex{
+    height:90px;
+    width:250px;
+    border-radius: 5px;
+}
+
+.imagenlibreriaindex{
+    height:90px;
+    width:250px;
+    border-radius: 5px;
+}
+
+.tarjetasdeproductos{
+    width: 0px;
+    padding-top:10px;
+    padding-bottom:50px;
+}
+
 .footer{
     display: flex;
     flex-direction: row;
+    align-content: flex-end;
     justify-content:space-between;
     align-items:center;
-    background-image: url(../multimedia/headermain.jpg) ; 
     width: 100vw;
-    height: 50vw;
+    height: 60vw;
 }
 
 footer img {
@@ -643,7 +745,12 @@ footer img {
     flex-direction: column;
     align-items: center;
     text-align:center;
-    font-size:17px;
+    font-size:10px;
+}
+
+.footer li{
+    font-size: 10px;
+    padding:5px;
 }
     /* Shop */
     
@@ -703,5 +810,64 @@ footer img {
     align-items:center;
     font-size: 50px;
     padding-top:30px;
+}
+/* Nosotros */
+.nosotrostitulo h1{
+    text-align: center;
+    color:#000000 ;
+    font-size: 45px;
+    padding-top:180px;
+    font-family: cursive;
+}
+
+.nosotros{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top:20px;
+    padding-left:0px;
+    
+}
+
+    .card-img-top{
+        height:100px;
+        width:120px;
+    }
+
+    .card-img-top3{
+        height:120px;
+        width:100px;
+    }
+
+    .card1{
+        display: flex;
+        border-style:dotted;
+        border-color: blue;
+        width:200px;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-body1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tarjetasnosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.ubicacion{
+    display:flex;
+    align-items: center;
+    padding:20px;
+    justify-content: center;
+}    
+.ubicaciontitulo {
+    text-align: center;
+    font-family: cursive;
+    padding-top:60px;
 }
 }
