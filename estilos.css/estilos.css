@@ -3,7 +3,7 @@
     padding:0px;
 }
 
-html {background-color: azure;
+body {background: #fffefe94;
 }
 
 /*Header*/
@@ -38,29 +38,51 @@ header{
 .menu li a{
     text-decoration: none;
 }
-
-@keyframes logoheader{
-    100% {animation:flip} /* creo que este keyframe está de más porque funciona
-    aunque no esté */
+.nav-link{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
 }
+
+.nav-tabs{
+    display: flex;
+    align-items: flex-end
+}
+
 .logoheader{
     width:80px;
     height:100px;
     position:absolute;  
     animation-name:logoheader;
-    animation:pulse;
-    animation-iteration-count:calc(2);
+    animation:tada;
+    animation-iteration-count:calc(5);
     animation-timing-function: linear;
     animation-duration: 2s;
     animation-delay: 1s;
     padding-left: 15px;
     padding-top: 10px;
 }
+@keyframes carritocompras{
+    0% {display:none;}
+ 25% {right:-300px;}
+ 50% {right: -400px;}
+ 75% {right: -500px;}
+100% {right: -600px;}
+}
 
-/* .menu li:hover ul{
-    display:block;
-} */
- 
+.shoppingcartgif{
+position:relative;
+right:-600px;
+    width:90px;
+    height:70px;
+    transform: rotateY(180deg);
+    animation:fadeOut;
+    animation-name:carritocompras;
+    animation-iteration-count:calc(1);
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-delay: 1s;
+}
+
 
 /*Footer*/
 
@@ -91,8 +113,14 @@ footer li a {
 .listafooter{
 list-style-type: none;
 font-size: large;
+font-family: 'Indie Flower', cursive;
 font-weight: bold;
-padding:30px;
+display:flex;
+flex-direction: row;
+}
+
+.listafooter li{
+    padding-left: 25px;
 }
 
 footer div{
@@ -100,13 +128,11 @@ footer div{
     width: 170px;
    
 }
-footer li{
-    display:inline-block
-}
 
 .footerlogo {
     height: 80px;
-    width: 60px;
+    width: 70px;
+    padding-left: 10px;
     
 }
 
@@ -114,18 +140,28 @@ footer li{
 
 .titulomainindex h1 {
     text-align: center;
-    color:#000000 ;
+    color:#9eb7f1 ;
     font-size: 100px;
-    font-family: cursive;
+    font-family:'Rubik Puddles', cursive;
 }
 
 .titulomainindex{
-    display:flex;
-    flex-direction:row;
-    align-items: flex-end;  
-    justify-content: center;
-    padding-top:120px;
+    width:1000px;
+    padding-top:125px;
     padding-bottom:25px;
+    padding-left:0px;
+    padding-right:0px;
+    margin:0px;
+    animation:rubberBand;
+    animation-iteration-count:calc(3);
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.rowparatitulo{
+    display:flex;
+    justify-content:space-around;
 }
 
 .cuerpoprincipalindex{
@@ -167,46 +203,18 @@ footer li{
 .tarjetasdeproductos{
     width: 0px;
     padding-bottom:50px;
+    padding-left: 30px;
 }
 
-
-    /* padding-top:50px; */
-/* 
-.paginaprincipal{ 
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: 0.5fr 0.5fr 3fr 0.1fr;
-grid-template-areas: 
-"navegacion navegacion navegacion navegacion"
-"titulo titulo titulo publicidad"
-"carrousel carrousel carrousel publicidad"
-"footer footer footer footer";
+.carrouseldeimagenes{
+    height: 700px;
+    width: 650px;
+    padding-bottom:30px;
 }
-
-.header{
-    grid-area: navegacion;
-}
-
-.titulomainindex{
-    grid-area: titulo;
-    align-self: start;
-}
-
-.cuerpoprincipalindex{
-    grid-area: carrousel;
-    display:flex;
-    flex-direction: row;
-    align-self: start;
-    justify-self:center;
-}
-
-.publicidadindex{
-    grid-area: publicidad;
-}
-
-.footer{
-    grid-area: footer;
-} */
+.carousel-item{
+    width: 100%;
+    height: 100%;
+  }
 
 
 /* La experiencia */
@@ -343,38 +351,73 @@ grid-template-areas:
 /* Nosotros */
 
 .nosotrostitulo h1{
-    text-align: center;
-    color:#000000 ;
-    font-size: 80px;
     padding-top:152px;
-    font-family: cursive;
+    text-align: center;
+    color:#9eb7f1 ;
+    font-size: 100px;
+    font-family:'Rubik Puddles', cursive;
+    padding-left:0px;
+    padding-right:0px;
+    margin:0px;
+    animation:rubberBand;
+    animation-iteration-count:calc(3);
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.rowparatitulonos{
+    display:flex;
+    justify-content:space-around;
 }
 
 .nosotros{
     display:flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-left:50px;
-    padding-top:20px;
-    
+    padding-top:20px;  
+}
+.rowparatitulo{
+    display:flex;
+    justify-content:space-around;
 }
 
-    .card-img-top{
+    .cardimgtopnosotros{
         height:150px;
         width:170px;
+        margin:0px;
+        display: flex;
+    align-self: center;
     }
 
-    .card-img-top3{
+    .cardimgtopnosotros3{
         height:170px;
         width:150px;
     }
 
-    .card1{
-        border-style:dotted;
-        border-color: blue;
+    .cardnos{
+        background-image: url(../multimedia/Nosotros/FondoDeTarjetasNosotros.png);
+        border-style:groove;
+        border-color: rgba(136, 136, 252, 0.541);
         width:450px; 
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        
     }
+
+/* .tarjetasnosotros{
+    height: 321px;
+    width: 450px;
+    transition:2s;
+    }
+
+.tarjetasnosotros:hover{
+    height: 350px;
+    width: 500px;
+} */
 
     .card-body1{
         display: flex;
@@ -382,7 +425,14 @@ grid-template-areas:
         align-items: center;
     }
     
+.cardfooternosotros{
+    width: 450px;
+    background-color: #9eb7f154;
+}
 
+.cardtextnos{
+    text-align: center;
+}
 .ubicacion{
     display:flex;
     align-items: center;
@@ -391,69 +441,111 @@ grid-template-areas:
 }    
 .ubicaciontitulo {
     text-align: center;
-    font-family: cursive;
+    color:#9eb7f1;
+    font-weight: bolder;
+    font-family: 'Indie Flower', cursive;
     padding-top:60px;
 }
 
 
+/* Carrito */
 
+.tucarrito{
+    padding-top: 250px;
+    padding-bottom: 50px;
+    
+}
 @media screen and (max-width:768px) {
+
+    /* Header */
+
+    .header{
+        position: fixed;  
+        width:100vw;
+        z-index: 99;
+        grid-area: navegacion;
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    
+    .menuheader li{
+        font-size: 15px;
+    }
+
+    .searchbox{
+        display:none;
+    }
+
+    .shoppingcartgif{
+        display:none;
+    }
+
+    /* Footer */
+
+    .footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items:center;
+        width: 100vw;
+        height: 15vw;
+    }
+    
+    .footer li{
+        font-size: 15px;
+        padding:5px;
+    }
 
     /* Index */
     
-.titulomainindex h1 {
-    color:#000000 ;
+.titulomainindex h1{
     font-size: 60px;
-    font-family: cursive;
-    display: flex;
-    align-items: center;
+    padding-top:50px;
 }
 
 .carrouseldeimagenes{
+    display: flex;
+    width: 100%;
+    height: 100%;
     margin:0px;
-    height:400px;
-    padding-bottom:100px;
+    padding-bottom:5px;
 }
-.carrouseldeimagenes img{
-    display:flex;
-    justify-content: center;
-     }
 
-.fotoscarrousel{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     .imagenfiguraindex{
-        height:500px;
-        width:400px;
+        width: 100%;
+        height: 100%;
         border-radius: 5px;
         }
     
     .imagenindumentariaindex{
-        height:500px;
-        width:400px;
+        width: 100%;
+        height: 100%;
         border-radius: 5px;
         }   
     
     .imagenpelucheindex{
-            height:500px;
-            width:400px;
-            border-radius: 5px; 
+        width: 100%;
+        height: 100%;
+        border-radius: 5px; 
         }
     
     .imagentecnoindex{
-        height:500px;
-        width:400px;
+        width: 100%;
+        height: 100%;
         border-radius: 5px;
     }
     
     .imagenlibreriaindex{
-        height:500px;
-        width:400px;
+        width: 100%;
+        height: 100%;
         border-radius: 5px;
     }
+
 .cuerpoprincipalindex{
     display:flex;
     flex-direction: column;
@@ -465,70 +557,19 @@ grid-template-areas:
     flex-direction: column;
     align-items: center;
     padding-top:50px;
+    padding-left:0px;
+    width:50px;
 }
 
-.searchbox{
-    display:none;
-}
-
-/* .paginaprincipal{ 
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: 0.5fr 0.5fr 3fr 0.1fr;
-grid-template-areas: 
-"navegacion navegacion navegacion navegacion"
-"titulo titulo titulo publicidad"
-"carrousel carrousel carrousel publicidad"
-"footer footer footer footer";
-} */
-
-.header{
-    position: fixed;  
-    width:100vw;
-    z-index: 99;
-    grid-area: navegacion;
-    display:flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-/* .menu{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    position: relative;
-    left: 200px;
-} */
-
-.menuheader li{
-    font-size: 15px;
-}
-.titulomainindex{
-    grid-area: titulo;
-    align-self: center;
-    padding-top:120px;
-}
-
-/* .cuerpoprincipalindex{
-    grid-area: carrousel;
-} */
-
-.footer{
-    grid-area: footer;
+.cardindex{
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:center;
-    width: 100vw;
-    height: 15vw;
+    align-items: center;
 }
 
-.footer li{
-    font-size: 15px;
-    padding:5px;
+.cardbodyindex{
+    text-align: center;
 }
-   
+
     /* Shop */
     
 
@@ -566,10 +607,8 @@ grid-template-areas:
 /* Nosotros */
 .nosotrostitulo h1{
     text-align: center;
-    color:#000000 ;
     font-size: 60px;
     padding-top:152px;
-    font-family: cursive;
 }
 
 .nosotros{
@@ -578,25 +617,30 @@ grid-template-areas:
     align-content: center;
     padding-top:20px;
     padding-left:0px;
-    
 }
 
-    .card-img-top{
+/* .tarjetasnosotros{
+    transition:none;
+}
+ */
+.tarjetasnotros:hover{
+    height:321px;
+    width: 450px;
+}
+    .cardimgtopnosotros{
         height:150px;
         width:170px;
     }
 
-    .card-img-top3{
+    .cardimgtopnosotros3{
         height:170px;
         width:150px;
     }
 
-    .card1{
+    .cardnos{
         display: flex;
-        border-style:dotted;
-        border-color: blue;
         width:400px;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
     }
     .card-body1{
@@ -611,6 +655,11 @@ grid-template-areas:
         align-items: center;
     }
 
+    .cardfooternosotros{
+        width: 100%;
+    }
+
+
 .ubicacion{
     display:flex;
     align-items: center;
@@ -624,21 +673,7 @@ grid-template-areas:
 }
 }
 @media screen and (max-width:320px) {
-
-    /* Index */
-    
-.titulomainindex h1 {
-    text-align: center;
-    color:#000000 ;
-    font-size: 45px;
-    font-family: cursive;
-    padding-top:80px;
-}
-
-.paginaprincipal{ 
-display:flex;
-flex-direction:column;
-}
+/* Header */
 
 .header{
     position: fixed;
@@ -649,12 +684,6 @@ flex-direction:column;
     flex-direction:row;
     justify-content: flex-start;
   }
-
-/* .menuheader{
-    display:flex;
-    flex-direction:row;
-
-} */
 
 .menuheader ul{
     display: flex;
@@ -672,6 +701,62 @@ flex-direction:column;
 .searchbox{
     display: none;
 }
+
+.shoppingcartgif{
+    display:none;
+}
+/* Footer */
+
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content:space-between;
+    align-items:center;
+    width: 100vw;
+    height: 60vw;
+}
+
+footer img {
+    height: 30px;    
+    width: 30px;
+    padding:5px;
+}
+
+.footerredes{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.listafooter{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    font-size:10px;
+}
+
+.footer li{
+    font-size: 10px;
+    padding:5px;
+}
+
+/* Index */
+    
+.titulomainindex h1 {
+    text-align: center;
+    font-size: 45px;
+    padding-top:80px;
+}
+
+.paginaprincipal{ 
+display:flex;
+flex-direction:column;
+}
+
 
 .carrouseldeimagenes{
     display:flex;
@@ -713,45 +798,10 @@ flex-direction:column;
 }
 
 .tarjetasdeproductos{
-    width: 0px;
-    padding-top:10px;
+    width: 500px;
     padding-bottom:50px;
 }
 
-.footer{
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-    justify-content:space-between;
-    align-items:center;
-    width: 100vw;
-    height: 60vw;
-}
-
-footer img {
-    height: 30px;    
-    width: 30px;
-    padding:5px;
-}
-
-.footerredes{
-    display:flex;
-    flex-direction:column;
-    justify-content: space-around;
-}
-
-.listafooter{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    text-align:center;
-    font-size:10px;
-}
-
-.footer li{
-    font-size: 10px;
-    padding:5px;
-}
     /* Shop */
     
 
@@ -799,10 +849,6 @@ footer img {
     width: 300px;
 }
 
-/* .tecnologia img{
-    height: 150px;
-    width: 300px;
-} */
 
 .shoptitulo{
     display:flex;
@@ -813,11 +859,9 @@ footer img {
 }
 /* Nosotros */
 .nosotrostitulo h1{
-    text-align: center;
-    color:#000000 ;
     font-size: 45px;
     padding-top:180px;
-    font-family: cursive;
+    animation:none;
 }
 
 .nosotros{
@@ -828,24 +872,22 @@ footer img {
     padding-left:0px;
     
 }
-
-    .card-img-top{
+    .cardimgtopnosotros{
         height:100px;
         width:120px;
     }
 
-    .card-img-top3{
+    .cardimgtopnosotros3{
         height:120px;
         width:100px;
     }
 
-    .card1{
+    .cardnos{
         display: flex;
-        border-style:dotted;
-        border-color: blue;
         width:200px;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
+       /*  transition:none; */
     }
     .card-body1{
         display: flex;
