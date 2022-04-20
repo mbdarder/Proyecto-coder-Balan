@@ -1,0 +1,14 @@
+
+@mixin mixinprueba{
+    background-color: aqua;
+    justify-content: center;
+    border-style: dotted;
+    border-color: blue;
+    border-width: 10px;
+}
+
+.cardindexprueba{
+    @include mixinprueba;
+    background-color: pink;
+  
+}

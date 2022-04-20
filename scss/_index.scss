@@ -5,24 +5,32 @@
     max-width: 100%;
 
     .titulomainindex{
+        width:1000px;
+        padding-top:125px;
+        padding-bottom:25px;
+        padding-left:0px;
+        padding-right:0px;
+        margin:0px;
+        animation:rubberBand;
+        animation-iteration-count:calc(3);
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        animation-delay: 1s;
 
-    width:1000px;
-    padding-top:125px;
-    padding-bottom:25px;
-    padding-left:0px;
-    padding-right:0px;
-    margin:0px;
-    animation:rubberBand;
-    animation-iteration-count:calc(3);
-    animation-timing-function: linear;
-    animation-duration: 2s;
-    animation-delay: 1s;
-
-        h1{
+        .tituloformatomain{
             text-align: center;
             color:$colorPrincipaltitulos ;
             font-size: 100px;
             font-family:$fontfamilyPrincipaltitulos;
+        }
+        h2{
+            @extend .tituloformatomain;
+            color:pink;
+        }
+        h3{
+            background-color: map-get($mapa2parapracticar,colorfondo);
+            font-size: map-get($mapa2parapracticar, tamletra);
+            color: map-get($mapa2parapracticar, colorletra);
         }
     }
 
@@ -59,8 +67,10 @@
             width: 0px;
             padding-bottom:50px;
             width: fit-content;
-    
+            
+            
         }
+        
     }
     
 }

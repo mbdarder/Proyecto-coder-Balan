@@ -112,11 +112,17 @@ footer {
     animation-timing-function: linear;
     animation-duration: 2s;
     animation-delay: 1s; }
-    .rowparatitulo .titulomainindex h1 {
+    .rowparatitulo .titulomainindex .tituloformatomain, .rowparatitulo .titulomainindex h2 {
       text-align: center;
       color: #9eb7f1;
       font-size: 100px;
       font-family: "Rubik Puddles", cursive; }
+    .rowparatitulo .titulomainindex h2 {
+      color: pink; }
+    .rowparatitulo .titulomainindex h3 {
+      background-color: yellow;
+      font-size: 50px;
+      color: #f72626; }
   .rowparatitulo .cuerpoprincipalindex {
     display: flex;
     flex-direction: row;
@@ -315,3 +321,11 @@ footer {
       padding-bottom: 50px; }
       .paginaprincipal .rowparatitulo .tarjetasdeproductos .cardindex {
         max-width: 200px; } }
+
+.cardindexprueba {
+  background-color: aqua;
+  justify-content: center;
+  border-style: dotted;
+  border-color: blue;
+  border-width: 10px;
+  background-color: pink; }
