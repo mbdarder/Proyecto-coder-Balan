@@ -1,3 +1,4 @@
+.paginaprincipal{
 .rowparatitulo{
 
     display:flex;
@@ -19,19 +20,11 @@
 
         .tituloformatomain{
             text-align: center;
-            color:$colorPrincipaltitulos ;
+            color:#9db6f1;
             font-size: 100px;
-            font-family:$fontfamilyPrincipaltitulos;
+            font-family:'Rubik Puddles', cursive;
         }
-        h2{
-            @extend .tituloformatomain;
-            color:pink;
-        }
-        h3{
-            background-color: map-get($mapa2parapracticar,colorfondo);
-            font-size: map-get($mapa2parapracticar, tamletra);
-            color: map-get($mapa2parapracticar, colorletra);
-        }
+        
     }
 
     .cuerpoprincipalindex{
@@ -40,31 +33,39 @@
         justify-content: center;
         
         .fotoscarrousel{
+            width: 40%;
             
             .carrouseldeimagenes{ 
-                width: fit-content;
+                max-width: 100%;
                 padding-bottom:30px;
+                
                 .carousel-inner{
-                    .imagenfiguraindex{width: 100%;
+                    .imagenfiguraindex{
+                        width: 100%;
                         height: 100%;
-                        border-radius: 5px;}
-                    .imagenindumentariaindex{width: 100%;
+                        }
+                    .imagenindumentariaindex{
+                        width: 100%;
                         height: 100%;
-                        border-radius: 5px;}
-                    .imagenpelucheindex{width: 100%;
+                        }
+                    .imagenpelucheindex{
+                        width: 100%;
                         height: 100%;
-                        border-radius: 5px; }
-                    .imagenlibreriaindex{width: 100%;
+                        }
+                    .imagenlibreriaindex{
+                        width: 100%;
                         height: 100%;
-                        border-radius: 5px;}
-                    .imagentecnoindex{width: 100%;
+                        }
+                    .imagentecnoindex{
+                        width: 100%;
                         height: 100%;
-                        border-radius: 5px;}
+                        }
                 }
             }
         }
         .tarjetasdeproductos{
             width: 0px;
+            padding-left: 50px;
             padding-bottom:50px;
             width: fit-content;
             
@@ -73,4 +74,37 @@
         
     }
     
+}
+
+
+.slidermarcas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 100%;
+    
+       .slidermarcas2{
+           position:relative;
+           left: 0px;
+        width: 1500px;  
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        animation:bounce;
+        animation-iteration-count:infinite;
+        animation-timing-function: linear;
+        animation-duration:3s;
+        animation-delay: 2s;  
+          
+        
+        li{
+            padding-left: 20px;
+            
+            
+        }
+    }
+
+   
+}
 }

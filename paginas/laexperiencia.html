@@ -10,16 +10,26 @@
     <link rel="shortcut icon" href="../multimedia/kawaiilogoico.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../estilos.css/estilos.css">
+
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rubik+Puddles&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../estilos/estilosprueba.css">
 </head>
 <body>
 
+  <div class="container-fluid m-0 p-0">
+
+
+ 
     <header class="header">
+      <div class="row">
         <a href="../index.html"><img class="logoheader" src="../multimedia/kawaiilogotransp.png" alt=""></a>
-        <nav class="nevegacion">
+        <nav class="menuheader navegacion col-12">
             <ul class="nav nav-tabs">
 
                 <li class="nav-item">
@@ -43,41 +53,58 @@
                       <button class="btn btn-outline-light" type="submit">Search</button>
                     </form>
                   </div>
+                  <div>
+                    <a href="../paginas/carrito.html"><img class="shoppingcartgif" src="../multimedia/shoppingcartindex.gif" alt="Shoppingcartgif"></a>
+                  </div>
               </ul> 
         </nav>
+      </div>
     </header>
 
-    <div class="laexperiencia">
-        <h1>Nuestro local</h1>
-        <h2>Una experiencia única</h2>
-    </div>
+    <main class="laexperienciamain row">
+          <section class="laexperienciatitulo col-12">
+              <h1>Nuestro local</h1>
+          </section>
     
-    <div class="fotoinfolocal">
-        <img src="../multimedia/La experiencia/laexperiencia2.jpg" alt="">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, recusandae dolorum fuga error nemo corporis velit aliquid. Enim autem nihil aperiam saepe nam, laudantium blanditiis ut vel sequi veritatis consectetur.</p>
-    </div>
+          <div class="fotoyvideoexperiencia row">
+    <section class="fotoinfolocal col-6">
+        <img class="local1" src="../multimedia/Laexperiencia/laexperiencia2.jpg" alt="Nuestro local">
+        <img class="local2" src="../multimedia/Laexperiencia/Laexperiencia1.jpg" alt="Nuestro local">
+    <p>Vení a conocer una partecita de Japón en Buenos Aires.</p>
+    </section>
 
 
-    <div class="videolocal">
+    <section class="videolocal col-6">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/qerwAJwmtS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <footer class="footer">
-        <img class="footerlogo" src="../multimedia/kawaiilogotransp.png" alt="Logo">
-        <nav> 
-            <ul class="listafooter">
-             <li><a href="../paginas/laexperiencia.html">La experiencia</a></li>
-             <li><a href="../paginas/shop.html">Shop</a></li>
-             <li><a href="../paginas/nosotros.html">Nosotros</a></li>
-             <li><a href="../paginas/contacto.html">Contacto</a></li>
-             </ul >
-        </nav>
-       
-     <div>
-        <img src="../multimedia/iconos/facebookicon.png">
-        <img src="../multimedia/iconos/instagramicon.png">
-        <img src="../multimedia/iconos/twittericon.png" >
-    </div>
-    </footer>
+    </section>
+        </div>
+  </main>
+
+    <section class="container-fluid m-0">
+      <div class="row">
+      <footer class="footer col-12">
+          <img class="footerlogo" src="../multimedia/kawaiilogotransp.png" alt="Logo Kawaii store">
+          <nav class="navfooter">
+          <ul class="listafooter">
+              <li><a href="../paginas/laexperiencia.html" alt="La experiencia">La experiencia</a></li>
+              <li><a href="../paginas/shop.html" alt="Shop">Shop</a></li>
+              <li><a href="../paginas/nosotros.html" alt="Nosotros">Nosotros</a></li>
+              <li><a href="../paginas/contacto.html" alt="Contacto">Contacto</a></li>
+          </ul >
+         </nav>
+  
+      <div class="footerredes">
+          <img src="../multimedia/iconos/facebookicon.png">
+          <img src="../multimedia/iconos/instagramicon.png">
+          <img src="../multimedia/iconos/twittericon.png" >
+      </div>   
+      </footer>
+  </div>
+  </section>
+
+</div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

@@ -1,14 +1,56 @@
 
-@mixin mixinprueba{
-    background-color: aqua;
-    justify-content: center;
-    border-style: dotted;
-    border-color: blue;
-    border-width: 10px;
+@mixin tituloconanimacion{
+    max-width: 1000px;
+    padding-top:125px;
+    padding-bottom:25px;
+    padding-left:0px;
+    padding-right:0px;
+    margin:0px;
+    animation:rubberBand;
+    animation-iteration-count:calc(3);
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-delay: 1s;
 }
 
-.cardindexprueba{
-    @include mixinprueba;
-    background-color: pink;
-  
+@mixin titulosestilos{
+    text-align: center;
+    color:#9db6f1 ;
+    font-size: 100px;
+    font-family:'Rubik Puddles', cursive;
+}
+
+.shoptitulo{
+    @include tituloconanimacion;
+        h1{
+    @include titulosestilos;
+          }
+}
+
+.nosotrostitulo{
+    @include tituloconanimacion;
+           h1{
+    @include titulosestilos;
+        }   
+}
+
+.laexperienciatitulo{
+    @include tituloconanimacion;
+        h1{
+    @include titulosestilos;
+        }
+}
+
+.contactotitulo{
+    @include tituloconanimacion;
+        h1{
+            @include titulosestilos;
+        }
+}
+
+.carritotitulo{
+    
+    h1{
+        @include titulosestilos()
+    }
 }

@@ -1,0 +1,111 @@
+.bodyshop{
+
+.mainshop{
+    display:flex;
+    justify-content:space-around;
+    max-width: 100%;
+    
+        .rowshop{
+            display: flex;
+            justify-content: center;
+
+                .shopimagenes{
+                display: grid;
+                grid-template-columns: repeat(3, 250px);
+                grid-template-rows: repeat(5, 250px);
+                column-gap: 10px;
+                row-gap: 30px;
+                padding: 30px 0px;
+                justify-content: center;
+                align-content:start;
+                grid-template-areas: 
+                "figuras figuras peluches peluches"
+                "figuras figuras indumentaria indumentaria"
+                "libreria libreria indumentaria indumentaria"
+                "tecnologia tecnologia tecnologia tecnologia";
+         
+                        .figuras{
+                            grid-area:figuras;
+
+                                .titulocategoriashop{
+                                    text-align: center;
+                                    color:#5180f0;
+                                    font-weight: bolder;
+                                    font-family: 'Indie Flower', cursive;
+                                }
+                                .imagenshopfiguras{
+                                    height: 500px;
+                                    width: 500px;
+                                }
+                        }
+
+                        .peluches{
+                            grid-area:peluches;
+
+                            .titulocategoriashop{
+                                text-align: center;
+                                color:#5180f0;
+                                font-weight: bolder;
+                                font-family: 'Indie Flower', cursive;
+                            }
+
+                        .imagenshoppeluches{
+                                    height: 200px;
+                                    width: 500px;
+                            }
+                        }
+
+                        .indumentaria{
+                            grid-area:indumentaria;
+
+                            .titulocategoriashop{
+                                text-align: center;
+                                color:#5180f0;
+                                font-weight: bolder;
+                                font-family: 'Indie Flower', cursive;
+                            }
+
+                            .imagenshopindumentaria{
+                                    height: 520px;
+                                    width: 500px;
+                            }
+                        }
+
+                        .tecnologia{
+                            grid-area: tecnologia;
+
+                            .titulocategoriashop{
+                                text-align: center;
+                                color:#5180f0;
+                                font-weight: bolder;
+                                font-family: 'Indie Flower', cursive;
+                                padding-top:10px;
+                            }
+                            
+                            .imagenshoptecnologia{
+                                    height: 220px;
+                                    width: 1025px;
+                            }
+                        }
+
+                        .libreria{
+                            grid-area:libreria;
+
+                            .titulocategoriashop{
+                                text-align: center;
+                                color:#5180f0;
+                                font-weight: bolder;
+                                font-family: 'Indie Flower', cursive;
+                            }
+
+                            .imagenshoplibreria{
+                                    height: 240px;
+                                    width: 500px;
+                            }
+                                }
+            }
+  
+        }
+
+    }
+}

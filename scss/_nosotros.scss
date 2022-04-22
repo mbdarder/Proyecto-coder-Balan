@@ -1,0 +1,84 @@
+.cuerpoprincipalnosotros{
+    max-width: 100%;
+    width: fit-content;
+    padding:0px;
+
+.rowparatitulonos{
+    display:flex;
+    justify-content:space-around;
+    max-width: 100%;
+
+    .secciontarjetasnosotros{
+        width: fit-content;
+
+    .nosotros{
+        width: fit-content;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left:50px;
+        padding-top:20px;  
+
+        .tarjetasnosotros{
+            .cardnos{
+                background-image: url(../multimedia/Nosotros/FondoDeTarjetasNosotros.png);
+                border-style:groove;
+                border-color: rgba(136, 136, 252, 0.541);
+                width:450px; 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: fit-content;
+
+                .cardimgtopnosotros{
+                    height:150px;
+                    width:170px;
+                    margin:0px;
+                    display: flex;
+                    align-self: center;
+                }
+                .cardimgtopnosotros3{
+                    height:170px;
+                    width:150px;
+                }
+             
+            .card-body1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .cardtextnos{text-align: center;}
+            }
+            .cardfooternosotros{
+                width: 450px;
+                background-color: #9eb7f154;
+                height:30px;
+            }
+            }
+        }
+
+    }
+}
+}
+.ubicacion{
+    max-width: 100%;
+    .ubicaciontitulo{
+        h2{
+            text-align: center;
+            color:#9eb7f1;
+            font-weight: bolder;
+            font-family: 'Indie Flower', cursive;
+            padding-top:60px;
+            max-width: 100%;
+
+        }
+    }
+    .ubicacionmapa{
+        max-width: 100%;
+        display:flex;
+        justify-content: center;
+        padding:20px;
+        justify-content: center;}
+}
+}

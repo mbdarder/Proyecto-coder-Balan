@@ -1,23 +1,233 @@
+@media screen and (max-width:1840px) {
+
+    .paginaprincipal{
+        .slidermarcas{
+            display:none;
+        }
+    }
+}
+
+@media screen and (max-width:1824px) {
+
+        .shoppingcartgif{
+            animation-play-state: paused;
+        
+}
+}
+@media screen and (max-width:1332px) {
+
+    .searchbox{
+            display: none;
+        }
+
+    .shoppingcartgif{
+        position:relative;
+        right: 0px;
+    }
+    
+}
+
+@media screen and (max-width:1688px){
+
+    /* Nosotros */
+    .cuerpoprincipalnosotros{
+        .rowparatitulonos{
+            .nosotrostitulo{
+                display: flex;
+                justify-content:center;
+                text-align: center;
+                font-size: 60px;
+                padding-top:152px;}
+
+            .secciontarjetasnosotros{
+            
+            .nosotros{
+                display:flex;
+                flex-direction: column;
+                align-content: center;
+                padding-top:20px;
+                padding-left:0px;
+                .tarjetasnosotros{
+                    .cardnos{
+
+                        .carimgtopnosotros{
+                            }
+                        .cardimgtopnosotros3{}
+                        .card-body1{
+                            .cardtextnos{}
+                            .cardfooternosotros{}
+                        }
+                    }
+                }
+            }
+            }
+
+            .ubicacion{
+                max-width: 100%;
+                .ubicaciontitulo{
+                    h2{
+                        text-align: center;
+                        color:#9eb7f1;
+                        font-weight: bolder;
+                        font-family: 'Indie Flower', cursive;
+                        padding-top:60px;
+                        max-width: 100%;
+            
+                    }
+                }
+                    .ubicacionmapa{max-width: 100%;
+                        display:flex;
+                        justify-content: center;
+                        padding:20px;
+                        justify-content: center;}
+                }
+            }
+        }
+    }
+
+
+@media screen and (max-width:1240px){
+
+    /* Contacto */
+
+    .maincontacto{
+        .datosymapa{
+            display:flex;
+            flex-direction: column;
+            padding-top:50px;
+            padding-bottom:50px;
+            
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width:1028px){
+
+    /* Contacto */
+
+    .maincontacto{
+        .mensajecontacto{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+
+        }
+        
+    }
+
+
+
+}
+@media screen and (max-width:1100px) {
+
+/* La experiencia */
+
+.laexperienciamain{
+    .laexperienciatitulo{
+        padding-top:200px;
+            h1{
+                font-size:50px;
+            }
+    }
+
+    .fotoyvideoexperiencia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 59px;
+
+            .fotoinfolocal{
+                .local1{
+                    height:200px;
+                    width: 300px;
+                }
+
+            .local2{
+                height:200px;
+                width: 300px;
+            }
+            }
+    }
+            .videolocal{
+               display: none;
+            }
+}
+
+
+
+/* Shop */
+
+.bodyshop{
+    display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start; 
+        align-content:center;
+    .mainshop{
+        .rowshop{
+            .shoptitulo{
+                padding-top:300px;
+                h1{
+                    font-size:80px;
+                }
+            }
+            .shopimagenes{
+                display:flex;
+                flex-direction:column;
+                align-items: center;
+
+                .tecnologia{
+                    .imagenshoptecnologia{
+                        height: 100px;
+                        width: 500px
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+}
+
+
+@media screen and (max-width:828px) {
+
+    
+    .shoppingcartgif{
+        display: none;
+    }
+
+}
 
 @media screen and (max-width:768px) {
 
     /* Header */
-
+    
     .header{
-        
+        flex-direction:column;
+        justify-content: flex-end;
         position: fixed;  
         width:100vw;
         z-index: 99;
-        grid-area: navegacion;
         display:flex;
-        flex-direction:row;
-        align-items: flex-end;
-        justify-content: space-evenly;
-        
-            
+        height: 200px;
+        max-width: 100%;
+      
         .row{
+          display: flex;
+          flex-direction: column;
             .menuheader{
+                
+
               .nav{
+                flex-direction:column;
+                align-items: flex-end;
+                justify-content: space-evenly;
                     .nav-item{
                         font-size: 15px;
                     }
@@ -34,18 +244,21 @@
         display:none;
     }
 
+
     /* Footer */
 
     .footer{
-        grid-area: footer;
         display: flex;
         flex-direction: row;
-        justify-content:space-between;
         align-items:center;
+        justify-content: flex-start;
         width: 100vw;
-        height: 15vw;
+        max-width: 100%;
+        height: fit-content;
 
             .listafooter{
+                display: flex;
+                flex-direction: column;
                 li{
                     font-size: 15px;
                     padding:5px;
@@ -53,105 +266,393 @@
             }
     }
 
-    /* Index */
+                    /* Index */
 
-    .rowparatitulo{
+                .paginaprincipal{
+                .divindex{
 
-            .titulomainindex{
-                         h1{
-                            padding-top:50px;
-                            font-size: 80px;
-                            } 
-                            }
+                    .rowparatitulo{
+
+                            .titulomainindex{
+                                        .tituloformatomain{
+                                            padding-top:100px;
+                                            font-size: 50px;
+                                            } 
+                                            }
+                                        
+                            .cuerpoprincipalindex{
                         
-            .cuerpoprincipalindex{
-        
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-
-                .fotoscarrousel{
-                        width: 70%;
-
-                    .carrouseldeimagenes{
-                        display: flex;
-                        width: 100%;
-                        height: 100%;
-                        margin:0px;
-                        padding-bottom:5px;
-                        .carousel-inner{
-                                .imagenfiguraindex{
-                                    width: 100%;
-                                    height: 100%;
-                                    border-radius: 5px;
-                                    }
-                                
-                                .imagenindumentariaindex{
-                                    width: 100%;
-                                    height: 100%;
-                                    border-radius: 5px;
-                                    }   
-                                
-                                .imagenpelucheindex{
-                                    width: 100%;
-                                    height: 100%;
-                                    border-radius: 5px; 
-                                    }
-                                
-                                .imagentecnoindex{
-                                    width: 100%;
-                                    height: 100%;
-                                    border-radius: 5px;
-                                }
-                                
-                                .imagenlibreriaindex{
-                                    width: 100%;
-                                    height: 100%;
-                                    border-radius: 5px;
-                                }
-    
-                        }
-                    }
-
-                }
-               
-                .tarjetasdeproductos{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding-top:50px;
-                    padding-left:0px;
-                    width:50px;
-
-                        .cardindex{
-                            display: flex;
+                            display:flex;
+                            flex-direction: column;
                             align-items: center;
 
-                            .cardbodyindex{
-                                text-align: center;
-                            }
-                        }
+                                .fotoscarrousel{
+                                        width: 50%;
+
+                                    .carrouseldeimagenes{
+                                        display: flex;
+                                        width: 100%;
+                                        height: 100%;
+                                        margin:0px;
+                                        padding-bottom:5px;
+                                        
+                                    }
+
+                                }
+                            
+                                .tarjetasdeproductos{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    padding-top:50px;
+                                    padding-left:0px;
+                                    width: fit-content;
+
+                                        .cardindex{
+                                            display: flex;
+                                            align-items: center;
+
+                                            .cardbodyindex{
+                                                text-align: center;
+                                            }
+                                        }
+                            
+                                    }
+
+                                }
+                    }
+                }
+                    .slidermarcas{
+                        display:none;
+                    }  
+                }
+
+/* La experiencia */
+
+
+        .laexperienciamain{
+            .laexperienciatitulo{
+                padding-top:250px;
+                    h1{
+                        font-size:50px;
+                    }
+            }
+
+            .fotoyvideoexperiencia{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 250px;
+                z-index: 98;
+
+                .fotoinfolocal{
+
+                    .local1{
+                        height: 300px;
+                        width: 400px;
+                    }
+
+                    .local2{
+                        height: 300px;
+                        width: 400px;
+                    }
+                }
+                    }
+        }
+
+
+/* Nosotros */
+
+    .cuerpoprincipalnosotros{
+        .rowparatitulonos{
+            .nosotrostitulo{
+                display: flex;
+                justify-content:center;
+                text-align: center;
+                font-size: 60px;
+                padding-top:200px;}
+
+            .secciontarjetasnosotros{
             
-                      }
+            .nosotros{
+                display:flex;
+                flex-direction: column;
+                align-content: center;
+                padding-top:20px;
+                padding-left:0px;
+                .tarjetasnosotros{
+                    .cardnos{
 
-                 }
+                        .carimgtopnosotros{
+                            }
+                        .cardimgtopnosotros3{}
+                        .card-body1{
+                            .cardtextnos{}
+                            .cardfooternosotros{}
+                        }
+                    }
+                }
+            }
+            }
+
+            .ubicacion{
+                max-width: 100%;
+                .ubicaciontitulo{
+                    h2{
+                        text-align: center;
+                        color:#9eb7f1;
+                        font-weight: bolder;
+                        font-family: 'Indie Flower', cursive;
+                        padding-top:60px;
+                        max-width: 100%;
+            
+                    }
+                }
+                    .ubicacionmapa{max-width: 100%;
+                        display:flex;
+                        justify-content: center;
+                        padding:20px;
+                        justify-content: center;}
+                }
+            }
+        }
+
+        /* Contacto */
+
+
+.maincontacto{
+    .contactotitulo{
+        padding-top:200px;
     }
- }
+}
+
+/* Carrito */
+
+.carritomain{
+    
+    .carritotitulo{
+        padding-top: 250px;
+        
+    }
+  
+
+}
+
+}
+
+@media screen and (max-width:428px){
+
+    .carritomain{
+        .carritotitulo{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    }
+}
+
+@media screen and (max-width:375px){
+
+    /* La experiencia */
+    .laexperienciamain{
+        
+        .laexperienciatitulo{
+            padding-top:300px;
+                h1{
+                    font-size:50px;
+                }
+        }
+
+        .fotoyvideoexperiencia{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 59px;
+            z-index: 98;
+
+            .fotoinfolocal{
+                .local1{
+                    height: 50;
+                    width: 100;
+                }
+                .local2{
+                    height: 50;
+                    width: 100;
+                }
+            }
+        }
+}
+   
+
+/* Shop */
+
+.bodyshop{
+    .mainshop{
+        .rowshop{
+            .shoptitulo{
+                padding-top:300px;
+                h1{
+                    font-size:50px;
+                }
+            }
+            .shopimagenes{
+
+                .figuras{
+                    
+                        .imagenshopfiguras{
+                            height: 200px;
+                            width: 200px;
+                        }
+                }
+
+                .peluches{
+
+                .imagenshoppeluches{
+                            height: 100px;
+                            width: 250px;
+                    }
+                }
+
+                .indumentaria{
+                   
+
+                    .imagenshopindumentaria{
+                        height: 200px;
+                        width: 200px;
+                    }
+                }
+
+                .tecnologia{
+                    
+                    
+                    .imagenshoptecnologia{
+                        height: 200px;
+                        width: 200px;
+                    }
+                }
+
+                .libreria{
+                    .imagenshoplibreria{
+                        height: 100px;
+                        width: 250px;
+                    }
+                        }
+    
+
+                .tecnologia{
+                    .imagenshoptecnologia{
+                        height: 50px;
+                        width: 250px
+                    }
+                }
 
 
- @media screen and (max-width:320px) {
+            }
+        }
+    }
+}
+
+/* Nosotros */
+
+.cuerpoprincipalnosotros{
+    .rowparatitulonos{
+        .nosotrostitulo{
+            display: flex;
+            justify-content:center;
+            text-align: center;
+            padding-top:250px;
+                h1{
+                    font-size: 50px;
+                }
+        }
+
+        .secciontarjetasnosotros{
+        
+        .nosotros{
+            display:flex;
+            flex-direction: column;
+            align-content: center;
+            padding-top:20px;
+            padding-left:0px;
+            .tarjetasnosotros{
+                .cardnos{
+                    width:200px;
+
+                    .carimgtopnosotros{
+                        }
+                    .cardimgtopnosotros3{}
+                    .card-body1{
+                        .cardtextnos{}
+                        
+                    }
+                    .cardfooternosotros{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        }
+
+        .ubicacion{
+            max-width: 30%;
+            padding-left:20px;
+            .ubicaciontitulo{
+                h2{
+                    text-align: center;
+                    color:#9eb7f1;
+                    font-weight: bolder;
+                    font-family: 'Indie Flower', cursive;
+                    padding-top:60px;
+                    max-width: 100%;
+        
+                }
+            }
+                .ubicacionmapa{max-width: 100%;
+                    display:flex;
+                    justify-content: center;
+                    padding:20px;
+                    justify-content: center;}
+            }
+        }
+    }
+
+     /* Contacto */
+
+     .maincontacto{
+         .contactotitulo{
+             h1{
+                 padding-top:50px;
+                 font-size:50px;
+             }
+         }
+        .datosymapa{
+            .ubicacioncontacto{
+                display:flex;
+
+            .ubicacionmapacontacto{
+                
+                width: 30%;
+            }
+        }
+        }
+
+        }
+        
+
+
+}
+@media screen and (max-width:320px) {
+   
     /* Header */
     
     .header{
         position: fixed;
         height: 220px;  
         width:100vw;
+        max-width: 100%;
         z-index: 99;
         display:flex;
-        flex-direction:row;
-        justify-content: flex-start;
-        align-items: flex-end;
-
+        flex-direction:column;
         .row{
             .menuheader{
                 .nav{
@@ -184,16 +685,14 @@
     .footer{
         display: flex;
         flex-direction: row;
-        align-content: flex-end;
-        justify-content:space-between;
-        align-items:center;
-        width: 100vw;
+        justify-content: flex-start;
+        max-width: 100%;
         height: fit-content;
         
         .navfooter{
             .listafooter{
                     display:flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     align-items: center;
                     text-align:center;
                     font-size:10px;
@@ -221,63 +720,29 @@
     
 
     .paginaprincipal{ 
+
         display:flex;
         flex-direction:column;
 
-        .rowparatitulo{  
+        .rowparatitulo{
+            margin:0px;  
 
             .titulomainindex {
-                h1 {
+                max-width: 100%;
+
+                .tituloformatomain{
                 text-align: center;
-                font-size: 40px;
+                font-size: 20px;
                 padding-top:120px;
                     }
                              }
             
                              
             .cuerpoprincipalindex{
+                padding:0px;
 
                 .fotoscarrousel{
-
-                    .carrouseldeimagenes{
-                        display:flex;
-                        flex-wrap: wrap;
-                        flex-direction: row;   
-                        justify-content: center;
-                        padding-bottom:10px;
-                        height:300px;
-                                
-                        .carousel-inner{
-                                    .imagenfiguraindex{
-                                        height:90px;
-                                        width:250px;
-                                        border-radius: 5px;
-                                        }
-                                    
-                                    .imagenindumentariaindex{
-                                        height:90px;
-                                        width:250px;
-                                        border-radius: 5px;
-                                        }   
-                                    
-                                    .imagenpelucheindex{
-                                            height:90px;
-                                            width:250px;
-                                            border-radius: 5px; 
-                                        }
-                                    
-                                    .imagentecnoindex{
-                                        height:90px;
-                                        width:250px;
-                                        border-radius: 5px;
-                                    }
-                                    
-                                    .imagenlibreriaindex{
-                                        height:90px;
-                                        width:250px;
-                                        border-radius: 5px;
-                                    }
-                                }
+                    width: 50%;
                     }
             }
            
@@ -290,6 +755,26 @@
                    max-width: 200px;
                }
                             }
+    }
+
+    /* La experiencia */
+
+
+    /* Carrito */
+    
+    .cuerpocarrito{
+    .carritomain{   
+    
+        .carritotitulo{
+                       
+                .titulocarritoh1{
+                    font-size: 20px;
+                    
+            
+                }
+      
         }
-    } 
+    
+    }
+    }
 }
