@@ -1,55 +1,65 @@
-
-@mixin tituloconanimacion{
+@mixin tituloconanimacion {
     max-width: 1000px;
-    padding-top:125px;
-    padding-bottom:25px;
-    padding-left:0px;
-    padding-right:0px;
-    margin:0px;
-    animation:rubberBand;
-    animation-iteration-count:calc(3);
+    padding-top: 125px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    animation: rubberBand;
+    animation-iteration-count: calc(3);
     animation-timing-function: linear;
     animation-duration: 2s;
     animation-delay: 1s;
 }
 
-@mixin titulosestilos{
+@mixin titulosestilos {
     text-align: center;
-    color:#9db6f1 ;
+    color: #9db6f1;
     font-size: 100px;
-    font-family:'Rubik Puddles', cursive;
+    font-family: 'Rubik Puddles', cursive;
 }
 
-.shoptitulo{
+.shoptitulo {
     @include tituloconanimacion;
-        h1{
-    @include titulosestilos;
-          }
+
+    h1 {
+        @include titulosestilos;
+    }
 }
 
-.nosotrostitulo{
+.nosotrostitulo {
     @include tituloconanimacion;
-           h1{
-    @include titulosestilos;
-        }   
+
+    h1 {
+        @include titulosestilos;
+    }
 }
 
-.laexperienciatitulo{
+.laexperienciatitulo {
     @include tituloconanimacion;
-        h1{
-    @include titulosestilos;
-        }
+
+    h1 {
+        @include titulosestilos;
+    }
 }
 
-.contactotitulo{
+.contactotitulo {
     @include tituloconanimacion;
-        h1{
-            @include titulosestilos;
-        }
+
+    h1 {
+        @include titulosestilos;
+    }
 }
 
-.carritotitulo{
-    
+.carritotitulo {
+
+    h1 {
+        @include titulosestilos()
+    }
+}
+
+.shoplibreriatitulo{
+    @include tituloconanimacion()
     h1{
         @include titulosestilos()
     }

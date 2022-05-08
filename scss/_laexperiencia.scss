@@ -1,48 +1,52 @@
-.laexperienciamain{
+.laexperienciamain {
 
-    display:flex;
+    display: flex;
     flex-direction: column;
     max-width: 100%;
     align-items: center;
 
-        .fotoyvideoexperiencia{
-                display: flex;
-                align-items: center;
-                padding-bottom: 59px;
-                
-        
-    .fotoinfolocal{
+    .fotoyvideoexperiencia {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        padding-bottom: 59px;
 
-        .local1{
-            height: 400px;
-            width: 500px;
-            border-radius: 5px;
-            transition:display 3s;
-            z-index: 99;
+
+        .fotoinfolocal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .local1 {
+                height: 400px;
+                width: 500px;
+                border-radius: 5px;
+                transition: display 3s;
+                z-index: 99;
+            }
+
+            .local2 {
+                position: absolute;
+                height: 400px;
+                width: 500px;
+            }
+
+            .local1:hover {
+                opacity: 0%;
+                ;
+            }
+
+
+
+            p {
+                text-align: center;
+                color: #5180f0;
+                font-weight: bolder;
+                font-family: 'Indie Flower', cursive;
+            }
         }
 
-        .local2{
-            position:absolute;
-            height: 400px;
-            width: 500px;
-                }
-
-        .local1:hover{
-            opacity: 0%;;
-        }
-
-
-
-        p{
-            text-align: center;
+        .videolocal {
+            padding-bottom: 20px;
         }
     }
-
-        .videolocal{
-            padding-bottom:20px;
-        }
-    }
-} 
+}

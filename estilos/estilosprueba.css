@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   background: linear-gradient(90deg, white 0%, rgba(187, 187, 244, 0.835172) 55%, #fad3fe 100%);
   position: fixed;
@@ -20,75 +21,114 @@
         padding: 0 10px; }
         .header .menuheader .nav-tabs li a {
           text-decoration: none; }
-
-.logoheader {
-  width: 80px;
-  height: 100px;
-  position: absolute;
-  animation-name: logoheader;
-  animation: tada;
-  animation-iteration-count: calc(5);
-  animation-timing-function: linear;
-  animation-duration: 2s;
-  animation-delay: 1s;
-  padding-left: 15px;
-  padding-top: 10px; }
-
-.searchbox {
-  height: 50px;
-  width: 500px;
-  display: flex;
-  justify-content: flex-end; }
+        .header .menuheader .nav-tabs li .submenu {
+          display: none;
+          position: absolute; }
+          .header .menuheader .nav-tabs li .submenu li {
+            display: block;
+            background-color: white; }
+      .header .menuheader .nav-tabs .nav-item:hover ul {
+        display: block; }
+  .header .botonerahamburguesa1 {
+    display: none; }
+    .header .botonerahamburguesa1 .shoppingcartgif2 {
+      width: 90px;
+      height: 70px;
+      transform: rotateY(180deg); }
+    .header .botonerahamburguesa1 .botonerahamburguesa2 {
+      height: 100px;
+      width: 95px; }
+    .header .botonerahamburguesa1 .botonerahamburguesa3 .navbar-toggler {
+      background-color: #9db6f1; }
+    .header .botonerahamburguesa1 .menuhamburguesa .menuhamburguesa1 .menuhamburguesalista1 .menuhamburguesalista2 {
+      background-color: white;
+      opacity: 70%;
+      width: 50vw; }
+      .header .botonerahamburguesa1 .menuhamburguesa .menuhamburguesa1 .menuhamburguesalista1 .menuhamburguesalista2 li {
+        list-style: none;
+        border-top: solid;
+        border-color: #9db6f1;
+        display: block; }
+        .header .botonerahamburguesa1 .menuhamburguesa .menuhamburguesa1 .menuhamburguesalista1 .menuhamburguesalista2 li a {
+          text-decoration: none; }
+        .header .botonerahamburguesa1 .menuhamburguesa .menuhamburguesa1 .menuhamburguesalista1 .menuhamburguesalista2 li .submenuhamburguesa {
+          display: none; }
+          .header .botonerahamburguesa1 .menuhamburguesa .menuhamburguesa1 .menuhamburguesalista1 .menuhamburguesalista2 li .submenuhamburguesa li {
+            display: block; }
+      .header .botonerahamburguesa1 .menuhamburguesa .menuhamburguesa1 .menuhamburguesalista1 .menuhamburguesalista2 .menuhambshop:hover ul {
+        display: block; }
+  .header .logoheader {
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    animation-name: logoheader;
+    animation: tada;
+    animation-iteration-count: calc(5);
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    padding-left: 15px;
+    padding-top: 10px; }
+  .header .searchbox {
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-end; }
 
 @keyframes carritocompras {
   0% {
     right: -0px; }
   100% {
     right: -500px; } }
+  .header .shoppingcartgif {
+    position: relative;
+    right: -0px;
+    width: 90px;
+    height: 70px;
+    transform: rotateY(180deg);
+    animation-name: carritocompras;
+    animation-iteration-count: calc(1);
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-duration: 10s;
+    animation-delay: 1s; }
 
-.shoppingcartgif {
-  position: relative;
-  right: -0px;
-  width: 90px;
-  height: 70px;
-  transform: rotateY(180deg);
-  animation-name: carritocompras;
-  animation-iteration-count: calc(1);
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-duration: 10s;
-  animation-delay: 1s; }
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(90deg, white 0%, rgba(187, 187, 244, 0.835172) 55%, #fad3fe 100%);
-  width: 100vw;
-  max-width: 100%;
-  height: 10vw; }
-  footer nav {
-    display: inline;
-    padding: 10px; }
-    footer nav .listafooter {
-      list-style-type: none;
-      font-size: large;
-      font-family: 'Indie Flower', cursive;
-      font-weight: bold;
+.footercuerpo {
+  padding: 0px; }
+  .footercuerpo .footerrow {
+    margin: 0%;
+    width: 100%; }
+    .footercuerpo .footerrow footer {
       display: flex;
-      flex-direction: row; }
-      footer nav .listafooter li {
-        padding-left: 25px; }
-        footer nav .listafooter li a {
-          text-decoration: none; }
-  footer .footerredes img {
-    height: 30px;
-    width: 30px; }
-  footer .footerlogo {
-    height: 80px;
-    width: 70px;
-    padding-left: 10px; }
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(90deg, white 0%, rgba(187, 187, 244, 0.835172) 55%, #fad3fe 100%);
+      width: 100vw;
+      max-width: 100%;
+      height: 10vw;
+      padding: 0px; }
+      .footercuerpo .footerrow footer nav {
+        display: inline;
+        padding: 10px; }
+        .footercuerpo .footerrow footer nav .listafooter {
+          list-style-type: none;
+          font-size: large;
+          font-family: 'Indie Flower', cursive;
+          font-weight: bold;
+          display: flex;
+          flex-direction: row; }
+          .footercuerpo .footerrow footer nav .listafooter li {
+            padding-left: 25px; }
+            .footercuerpo .footerrow footer nav .listafooter li a {
+              text-decoration: none; }
+      .footercuerpo .footerrow footer .footerredes img {
+        height: 30px;
+        width: 30px; }
+      .footercuerpo .footerrow footer .footerlogo {
+        height: 80px;
+        width: 70px;
+        padding-left: 10px; }
 
 .paginaprincipal .rowparatitulo {
   display: flex;
@@ -115,6 +155,11 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center; }
+    .paginaprincipal .rowparatitulo .cuerpoprincipalindex .tarjetasdeproductos1 {
+      width: 0px;
+      padding-right: 50px;
+      padding-bottom: 50px;
+      width: fit-content; }
     .paginaprincipal .rowparatitulo .cuerpoprincipalindex .fotoscarrousel {
       width: 40%; }
       .paginaprincipal .rowparatitulo .cuerpoprincipalindex .fotoscarrousel .carrouseldeimagenes {
@@ -135,7 +180,7 @@ footer {
         .paginaprincipal .rowparatitulo .cuerpoprincipalindex .fotoscarrousel .carrouseldeimagenes .carousel-inner .imagentecnoindex {
           width: 100%;
           height: 100%; }
-    .paginaprincipal .rowparatitulo .cuerpoprincipalindex .tarjetasdeproductos {
+    .paginaprincipal .rowparatitulo .cuerpoprincipalindex .tarjetasdeproductos2 {
       width: 0px;
       padding-left: 50px;
       padding-bottom: 50px;
@@ -181,32 +226,45 @@ footer {
     width: 60px; }
   .carritomain .tucarrito {
     padding-top: 50px;
-    height: 100%; }
+    height: 100%;
+    padding-bottom: 300px; }
 
 .maincontacto {
   display: flex;
   justify-content: space-around;
-  max-width: 100%;
   width: fit-content;
-  margin: 0px; }
-  .maincontacto .mensajecontacto {
+  max-width: 100%;
+  margin: 0%;
+  padding: 0px; }
+  .maincontacto .imagenymensajecontacto {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
     border-style: groove;
     border-color: #9eb7f1;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 1000px;
-    justify-content: space-evenly; }
-  .maincontacto .datoscontacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+    max-width: 80%; }
+    .maincontacto .imagenymensajecontacto .imagencontacto {
+      height: 120px;
+      width: 150px;
+      padding-right: 10px; }
+    .maincontacto .imagenymensajecontacto .mensajecontacto {
+      display: flex;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      justify-content: space-evenly;
+      max-width: 100%; }
   .maincontacto .datosymapa {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 100%;
+    max-width: 90%;
     padding: 0px; }
+    .maincontacto .datosymapa .datoscontacto {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
     .maincontacto .datosymapa .ubicacioncontacto {
       display: flex;
       flex-direction: column;
@@ -223,41 +281,10 @@ footer {
           max-width: 100%;
           display: flex;
           justify-content: center;
-          padding: 20px;
           justify-content: center; }
       .maincontacto .datosymapa .ubicacioncontacto .datosdecontactoredes {
         display: flex;
         flex-direction: row; }
-
-.laexperienciamain {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  align-items: center; }
-  .laexperienciamain .fotoyvideoexperiencia {
-    display: flex;
-    align-items: center;
-    padding-bottom: 59px; }
-    .laexperienciamain .fotoyvideoexperiencia .fotoinfolocal {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .laexperienciamain .fotoyvideoexperiencia .fotoinfolocal .local1 {
-        height: 400px;
-        width: 500px;
-        border-radius: 5px;
-        transition: display 3s;
-        z-index: 99; }
-      .laexperienciamain .fotoyvideoexperiencia .fotoinfolocal .local2 {
-        position: absolute;
-        height: 400px;
-        width: 500px; }
-      .laexperienciamain .fotoyvideoexperiencia .fotoinfolocal .local1:hover {
-        opacity: 0%; }
-      .laexperienciamain .fotoyvideoexperiencia .fotoinfolocal p {
-        text-align: center; }
-    .laexperienciamain .fotoyvideoexperiencia .videolocal {
-      padding-bottom: 20px; }
 
 .cuerpoprincipalnosotros {
   max-width: 100%;
@@ -270,7 +297,7 @@ footer {
     .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros {
       width: fit-content; }
       .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros .nosotros {
-        width: fit-content;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -356,7 +383,7 @@ footer {
           font-weight: bolder;
           font-family: 'Indie Flower', cursive; }
         .bodyshop .mainshop .rowshop .shopimagenes .peluches .imagenshoppeluches {
-          height: 200px;
+          height: 190px;
           width: 500px; }
       .bodyshop .mainshop .rowshop .shopimagenes .indumentaria {
         grid-area: indumentaria; }
@@ -389,6 +416,24 @@ footer {
         .bodyshop .mainshop .rowshop .shopimagenes .libreria .imagenshoplibreria {
           height: 240px;
           width: 500px; }
+
+.mainshoplibreria {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mainshoplibreria .conjuntotarjetaslibreria {
+    display: flex;
+    justify-content: center; }
+    .mainshoplibreria .conjuntotarjetaslibreria .col {
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      padding: 10px; }
+      .mainshoplibreria .conjuntotarjetaslibreria .col .card .btn-primary {
+        background-color: #9db6f1;
+        border-color: #9db6f1; }
+      .mainshoplibreria .conjuntotarjetaslibreria .col .card .card-body .card-text {
+        text-align: center; }
 
 .shoptitulo {
   max-width: 1000px;
@@ -468,6 +513,24 @@ footer {
   font-size: 100px;
   font-family: 'Rubik Puddles', cursive; }
 
+.shoplibreriatitulo {
+  max-width: 1000px;
+  padding-top: 125px;
+  padding-bottom: 25px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  animation: rubberBand;
+  animation-iteration-count: calc(3);
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-delay: 1s; }
+  .shoplibreriatitulo h1 {
+    text-align: center;
+    color: #9db6f1;
+    font-size: 100px;
+    font-family: 'Rubik Puddles', cursive; }
+
 @media screen and (max-width: 1840px) {
   .paginaprincipal .slidermarcas {
     display: none; } }
@@ -476,6 +539,68 @@ footer {
   .shoppingcartgif {
     animation-play-state: paused; } }
 
+@media screen and (max-width: 1688px) {
+  /* Nosotros */
+  .cuerpoprincipalnosotros {
+    width: 100%; }
+    .cuerpoprincipalnosotros .rowparatitulonos {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .cuerpoprincipalnosotros .rowparatitulonos .nosotrostitulo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 60px;
+        padding-top: 152px; }
+      .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros {
+        padding-left: 0px;
+        padding-right: 0px; }
+        .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros .nosotros {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          padding-top: 20px;
+          padding-left: 0px;
+          padding-right: 0px; }
+          .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros .nosotros .tarjetasnosotros {
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 450px; }
+  .ubicacion {
+    max-width: 100%; }
+    .ubicacion .ubicaciontitulo h2 {
+      text-align: center;
+      color: #9eb7f1;
+      font-weight: bolder;
+      font-family: 'Indie Flower', cursive;
+      padding-top: 60px;
+      max-width: 100%; }
+    .ubicacion .ubicacionmapa {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      justify-content: center; }
+  /* Contacto */
+  .maincontacto {
+    margin: 0px;
+    max-width: 100vw; }
+    .maincontacto .contactotitulo {
+      width: 60%; }
+    .maincontacto .imagenymensajecontacto {
+      display: flex;
+      flex-direction: column; }
+      .maincontacto .imagenymensajecontacto .mensajecontacto {
+        display: flex;
+        flex-direction: column;
+        width: 70%; }
+    .maincontacto .datosymapa {
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+
 @media screen and (max-width: 1332px) {
   .searchbox {
     display: none; }
@@ -483,70 +608,42 @@ footer {
     position: relative;
     right: 0px; } }
 
-@media screen and (max-width: 1688px) {
-  /* Nosotros */
-  .cuerpoprincipalnosotros .rowparatitulonos .nosotrostitulo {
+@media screen and (max-width: 1158px) {
+  /* Header */
+  .header {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 60px;
-    padding-top: 152px; }
-  .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros .nosotros {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding-top: 20px;
-    padding-left: 0px; }
-  .cuerpoprincipalnosotros .rowparatitulonos .ubicacion {
-    max-width: 100%; }
-    .cuerpoprincipalnosotros .rowparatitulonos .ubicacion .ubicaciontitulo h2 {
-      text-align: center;
-      color: #9eb7f1;
-      font-weight: bolder;
-      font-family: 'Indie Flower', cursive;
-      padding-top: 60px;
-      max-width: 100%; }
-    .cuerpoprincipalnosotros .rowparatitulonos .ubicacion .ubicacionmapa {
-      max-width: 100%;
+    align-items: center; }
+    .header .headerrow {
+      display: none; }
+    .header .botonerahamburguesa1 {
       display: flex;
-      justify-content: center;
-      padding: 20px;
-      justify-content: center; } }
-
-@media screen and (max-width: 1240px) {
-  /* Contacto */
-  .maincontacto .datosymapa {
+      flex-direction: row;
+      align-items: center; }
+      .header .botonerahamburguesa1 .botonerahamburguesa3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .header .botonerahamburguesa1 .botonerahamburguesa3 .menuhamburguesa {
+          padding-top: 100px; }
+          .header .botonerahamburguesa1 .botonerahamburguesa3 .menuhamburguesa .menuhamburguesalista2 {
+            display: flex;
+            flex-direction: column;
+            position: absolute; }
+  /* Index */
+  .paginaprincipal .rowparatitulo .cuerpoprincipalindex {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 50px; } }
-
-@media screen and (max-width: 1028px) {
-  /* Contacto */
-  .maincontacto .mensajecontacto {
-    display: flex;
-    flex-direction: column;
-    width: 70%; } }
+    align-items: center; }
+    .paginaprincipal .rowparatitulo .cuerpoprincipalindex .fotoscarrousel {
+      width: 70vw;
+      order: -1; }
+    .paginaprincipal .rowparatitulo .cuerpoprincipalindex .tarjetasdeproductos1 {
+      padding: 0px; }
+    .paginaprincipal .rowparatitulo .cuerpoprincipalindex .tarjetasdeproductos2 {
+      padding-left: 0px;
+      padding-bottom: 30px; } }
 
 @media screen and (max-width: 1100px) {
-  /* La experiencia */
-  .laexperienciamain .laexperienciatitulo {
-    padding-top: 200px; }
-    .laexperienciamain .laexperienciatitulo h1 {
-      font-size: 50px; }
-  .laexperienciamain .fotoyvideoexperiencia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 59px; }
-    .laexperienciamain .fotoyvideoexperiencia .fotoinfolocal .local1 {
-      height: 200px;
-      width: 300px; }
-    .laexperienciamain .fotoyvideoexperiencia .fotoinfolocal .local2 {
-      height: 200px;
-      width: 300px; }
-  .laexperienciamain .videolocal {
-    display: none; }
   /* Shop */
   .bodyshop {
     display: flex;
@@ -555,7 +652,7 @@ footer {
     justify-content: start;
     align-content: center; }
     .bodyshop .mainshop .rowshop .shoptitulo {
-      padding-top: 300px; }
+      padding-top: 135px; }
       .bodyshop .mainshop .rowshop .shoptitulo h1 {
         font-size: 80px; }
     .bodyshop .mainshop .rowshop .shopimagenes {
@@ -567,33 +664,11 @@ footer {
         width: 500px; } }
 
 @media screen and (max-width: 828px) {
+  /* Header */
   .shoppingcartgif {
     display: none; } }
 
 @media screen and (max-width: 768px) {
-  /* Header */
-  .header {
-    flex-direction: column;
-    justify-content: flex-end;
-    position: fixed;
-    width: 100vw;
-    z-index: 99;
-    display: flex;
-    height: 200px;
-    max-width: 100%; }
-    .header .row {
-      display: flex;
-      flex-direction: column; }
-      .header .row .menuheader .nav {
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-evenly; }
-        .header .row .menuheader .nav .nav-item {
-          font-size: 15px; }
-  .searchbox {
-    display: none; }
-  .shoppingcartgif {
-    display: none; }
   /* Footer */
   .footer {
     display: flex;
@@ -611,114 +686,78 @@ footer {
         padding: 5px; }
   /* Index */
   .paginaprincipal .divindex .rowparatitulo .titulomainindex .tituloformatomain {
-    padding-top: 100px;
-    font-size: 50px; }
-  .paginaprincipal .divindex .rowparatitulo .cuerpoprincipalindex {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .paginaprincipal .divindex .rowparatitulo .cuerpoprincipalindex .fotoscarrousel {
-      width: 50%; }
-      .paginaprincipal .divindex .rowparatitulo .cuerpoprincipalindex .fotoscarrousel .carrouseldeimagenes {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding-bottom: 5px; }
-    .paginaprincipal .divindex .rowparatitulo .cuerpoprincipalindex .tarjetasdeproductos {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 50px;
-      padding-left: 0px;
-      width: fit-content; }
-      .paginaprincipal .divindex .rowparatitulo .cuerpoprincipalindex .tarjetasdeproductos .cardindex {
-        display: flex;
-        align-items: center; }
-        .paginaprincipal .divindex .rowparatitulo .cuerpoprincipalindex .tarjetasdeproductos .cardindex .cardbodyindex {
-          text-align: center; }
+    padding-top: 60px;
+    font-size: 80px; }
   .paginaprincipal .slidermarcas {
     display: none; }
-  /* La experiencia */
-  .laexperienciamain .laexperienciatitulo {
-    padding-top: 250px; }
-    .laexperienciamain .laexperienciatitulo h1 {
-      font-size: 50px; }
-  .laexperienciamain .fotoyvideoexperiencia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 250px;
-    z-index: 98; }
-    .laexperienciamain .fotoyvideoexperiencia .fotoinfolocal .local1 {
-      height: 300px;
-      width: 400px; }
-    .laexperienciamain .fotoyvideoexperiencia .fotoinfolocal .local2 {
-      height: 300px;
-      width: 400px; }
-  /* Nosotros */
-  .cuerpoprincipalnosotros .rowparatitulonos .nosotrostitulo {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 60px;
-    padding-top: 200px; }
-  .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros .nosotros {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding-top: 20px;
-    padding-left: 0px; }
-  .cuerpoprincipalnosotros .rowparatitulonos .ubicacion {
-    max-width: 100%; }
-    .cuerpoprincipalnosotros .rowparatitulonos .ubicacion .ubicaciontitulo h2 {
-      text-align: center;
-      color: #9eb7f1;
-      font-weight: bolder;
-      font-family: 'Indie Flower', cursive;
-      padding-top: 60px;
-      max-width: 100%; }
-    .cuerpoprincipalnosotros .rowparatitulonos .ubicacion .ubicacionmapa {
-      max-width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-      justify-content: center; }
   /* Contacto */
   .maincontacto .contactotitulo {
     padding-top: 200px; }
   /* Carrito */
   .carritomain .carritotitulo {
-    padding-top: 250px; } }
+    padding-top: 150px; } }
+
+@media screen and (max-width: 650px) {
+  /* Contacto */
+  .maincontacto .contactotitulo h1 {
+    font-size: 80px; }
+  .maincontacto .datosymapa .ubicacioncontacto .ubicacionmapacontacto .mapa {
+    width: 90%; }
+  /* Footer */
+  .footercuerpo .footerrow .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100%;
+    height: fit-content; }
+    .footercuerpo .footerrow .footer .navfooter .listafooter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 10px;
+      padding: 0px; }
+      .footercuerpo .footerrow .footer .navfooter .listafooter li {
+        font-size: 10px;
+        padding: 5px; }
+  .footercuerpo .footerrow .footerredes img {
+    display: inline;
+    height: 30px;
+    width: 30px;
+    padding: 5px; } }
+
+@media screen and (max-width: 544px) {
+  /* /* Nosotros */
+  .cuerpoprincipalnosotros .rowparatitulonos .nosotrostitulo {
+    padding-top: 152px; }
+    .cuerpoprincipalnosotros .rowparatitulonos .nosotrostitulo h1 {
+      font-size: 90%; }
+  .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros .nosotros .tarjetasnosotros {
+    width: 60%; }
+    .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros .nosotros .tarjetasnosotros .cardnos {
+      width: 100%; }
+      .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros .nosotros .tarjetasnosotros .cardnos .card-body1 .cardtextnos {
+        width: 100%; }
+      .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros .nosotros .tarjetasnosotros .cardnos .cardfooternosotros {
+        width: 100%; }
+  /* Contacto */
+  .maincontacto .contactotitulo h1 {
+    font-size: 50px; }
+  .carritotitulo h1 {
+    font-size: 70px; } }
 
 @media screen and (max-width: 428px) {
   .carritomain .carritotitulo {
     display: flex;
     flex-direction: column; } }
 
+@media screen and (max-width: 428px) {
+  /* Shop librería */
+  .conjuntotarjetaslibreria {
+    width: 80%; } }
+
 @media screen and (max-width: 375px) {
-  /* La experiencia */
-  .laexperienciamain .laexperienciatitulo {
-    padding-top: 300px; }
-    .laexperienciamain .laexperienciatitulo h1 {
-      font-size: 50px; }
-  .laexperienciamain .fotoyvideoexperiencia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 59px;
-    z-index: 98; }
-    .laexperienciamain .fotoyvideoexperiencia .fotoinfolocal .local1 {
-      height: 50;
-      width: 100; }
-    .laexperienciamain .fotoyvideoexperiencia .fotoinfolocal .local2 {
-      height: 50;
-      width: 100; }
   /* Shop */
-  .bodyshop .mainshop .rowshop .shoptitulo {
-    padding-top: 300px; }
-    .bodyshop .mainshop .rowshop .shoptitulo h1 {
-      font-size: 50px; }
   .bodyshop .mainshop .rowshop .shopimagenes .figuras .imagenshopfiguras {
     height: 200px;
     width: 200px; }
@@ -738,115 +777,41 @@ footer {
     height: 50px;
     width: 250px; }
   /* Nosotros */
-  .cuerpoprincipalnosotros .rowparatitulonos .nosotrostitulo {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 250px; }
-    .cuerpoprincipalnosotros .rowparatitulonos .nosotrostitulo h1 {
-      font-size: 50px; }
-  .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros .nosotros {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding-top: 20px;
-    padding-left: 0px; }
-    .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros .nosotros .tarjetasnosotros .cardnos {
-      width: 200px; }
-      .cuerpoprincipalnosotros .rowparatitulonos .secciontarjetasnosotros .nosotros .tarjetasnosotros .cardnos .cardfooternosotros {
-        width: 200px; }
-  .cuerpoprincipalnosotros .rowparatitulonos .ubicacion {
-    max-width: 30%;
-    padding-left: 20px; }
-    .cuerpoprincipalnosotros .rowparatitulonos .ubicacion .ubicaciontitulo h2 {
-      text-align: center;
-      color: #9eb7f1;
-      font-weight: bolder;
-      font-family: 'Indie Flower', cursive;
-      padding-top: 60px;
-      max-width: 100%; }
-    .cuerpoprincipalnosotros .rowparatitulonos .ubicacion .ubicacionmapa {
-      max-width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-      justify-content: center; }
+  .nosotrostitulo h1 {
+    font-size: 80%; } }
+
+@media screen and (max-width: 360px) {
   /* Contacto */
   .maincontacto .contactotitulo h1 {
-    padding-top: 50px;
-    font-size: 50px; }
-  .maincontacto .datosymapa .ubicacioncontacto {
-    display: flex; }
-    .maincontacto .datosymapa .ubicacioncontacto .ubicacionmapacontacto {
-      width: 30%; } }
+    font-size: 40px; }
+  .maincontacto .datosymapa .datoscontacto p {
+    text-align: center; }
+  .maincontacto .datosymapa .datoscontacto .datosdecontactoredes {
+    display: flex;
+    flex-direction: column; } }
 
 @media screen and (max-width: 320px) {
   /* Header */
-  .header {
-    position: fixed;
-    height: 220px;
-    width: 100vw;
-    max-width: 100%;
-    z-index: 99;
-    display: flex;
-    flex-direction: column; }
-    .header .row .menuheader .nav {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-content: flex-end;
-      height: fit-content; }
-      .header .row .menuheader .nav li {
-        font-size: 15px; }
-  .searchbox {
-    display: none; }
-  .shoppingcartgif {
-    display: none; }
-  /* Footer */
-  .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    max-width: 100%;
-    height: fit-content; }
-    .footer .navfooter .listafooter {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      font-size: 10px; }
-      .footer .navfooter .listafooter li {
-        font-size: 10px;
-        padding: 5px; }
-  .footerredes img {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 30px;
-    width: 30px;
-    padding: 5px; }
+  .menuhamburguesa1 {
+    display: contents; }
+    .menuhamburguesa1 .menuhamburguesalista2 {
+      padding: 0px; }
   /* Index */
-  .paginaprincipal {
-    display: flex;
-    flex-direction: column; }
-    .paginaprincipal .rowparatitulo {
-      margin: 0px; }
-      .paginaprincipal .rowparatitulo .titulomainindex {
-        max-width: 100%; }
-        .paginaprincipal .rowparatitulo .titulomainindex .tituloformatomain {
-          text-align: center;
-          font-size: 20px;
-          padding-top: 120px; }
-      .paginaprincipal .rowparatitulo .cuerpoprincipalindex {
-        padding: 0px; }
-        .paginaprincipal .rowparatitulo .cuerpoprincipalindex .fotoscarrousel {
-          width: 50%; }
-    .paginaprincipal .tarjetasdeproductos {
-      padding-bottom: 50px; }
-      .paginaprincipal .tarjetasdeproductos .cardindex {
-        max-width: 200px; }
-  /* La experiencia */
+  .paginaprincipal .rowparatitulo {
+    margin: 0px; }
+    .paginaprincipal .rowparatitulo .titulomainindex {
+      max-width: 100%; }
+      .paginaprincipal .rowparatitulo .titulomainindex .tituloformatomain {
+        text-align: center;
+        padding-top: 120px; }
+    .paginaprincipal .rowparatitulo .cuerpoprincipalindex {
+      padding: 0px; }
+      .paginaprincipal .rowparatitulo .cuerpoprincipalindex .fotoscarrousel {
+        width: 90%; }
+  .paginaprincipal .tarjetasdeproductos {
+    padding-bottom: 50px; }
+    .paginaprincipal .tarjetasdeproductos .cardindex {
+      max-width: 200px; }
   /* Carrito */
   .cuerpocarrito .carritomain .carritotitulo .titulocarritoh1 {
     font-size: 20px; } }

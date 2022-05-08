@@ -1,32 +1,32 @@
-
-.carritomain{
-    display:flex;
-    justify-content:space-around;
+.carritomain {
+    display: flex;
+    justify-content: space-around;
     max-width: 100%;
 
-    .carritotitulo{
-    max-width: 1000px;
-    padding-top:125px;
-    padding-bottom:25px;
-    padding-left:0px;
-    padding-right:0px;
-    margin:0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .carritotitulo {
+        max-width: 1000px;
+        padding-top: 125px;
+        padding-bottom: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
     }
-    
-    img{
+
+    img {
         height: 80px;
         width: 60px;
     }
-    .tucarrito{
+
+    .tucarrito {
         padding-top: 50px;
         height: 100%;
+        padding-bottom:300px;
 
-        
+
     }
 
 }
-

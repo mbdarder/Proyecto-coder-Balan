@@ -1,0 +1,32 @@
+.mainshoplibreria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .conjuntotarjetaslibreria {
+        display: flex;
+        justify-content: center;
+
+        .col {
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+
+
+            .card {
+                
+                .btn-primary {
+                    background-color: #9db6f1;
+                    border-color: #9db6f1;
+                }
+
+                .card-body {
+                    .card-text {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
