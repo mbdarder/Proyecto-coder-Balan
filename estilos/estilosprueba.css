@@ -43,18 +43,21 @@
     .header .botonerahamburguesa1 .menuhamburguesa .menuhamburguesa1 .menuhamburguesalista1 .menuhamburguesalista2 {
       background-color: white;
       opacity: 70%;
-      width: 50vw; }
+      width: 50vw;
+      padding: 0px; }
       .header .botonerahamburguesa1 .menuhamburguesa .menuhamburguesa1 .menuhamburguesalista1 .menuhamburguesalista2 li {
         list-style: none;
         border-top: solid;
         border-color: #9db6f1;
-        display: block; }
+        display: block;
+        font-size: 25px; }
         .header .botonerahamburguesa1 .menuhamburguesa .menuhamburguesa1 .menuhamburguesalista1 .menuhamburguesalista2 li a {
           text-decoration: none; }
         .header .botonerahamburguesa1 .menuhamburguesa .menuhamburguesa1 .menuhamburguesalista1 .menuhamburguesalista2 li .submenuhamburguesa {
           display: none; }
           .header .botonerahamburguesa1 .menuhamburguesa .menuhamburguesa1 .menuhamburguesalista1 .menuhamburguesalista2 li .submenuhamburguesa li {
-            display: block; }
+            display: block;
+            font-size: 25px; }
       .header .botonerahamburguesa1 .menuhamburguesa .menuhamburguesa1 .menuhamburguesalista1 .menuhamburguesalista2 .menuhambshop:hover ul {
         display: block; }
   .header .logoheader {
@@ -94,7 +97,7 @@
     animation-delay: 1s; }
 
 .footercuerpo {
-  padding: 0px; }
+  padding: 0%; }
   .footercuerpo .footerrow {
     margin: 0%;
     width: 100%; }
@@ -105,12 +108,11 @@
       align-items: center;
       background: linear-gradient(90deg, white 0%, rgba(187, 187, 244, 0.835172) 55%, #fad3fe 100%);
       width: 100vw;
-      max-width: 100%;
       height: 10vw;
       padding: 0px; }
       .footercuerpo .footerrow footer nav {
         display: inline;
-        padding: 10px; }
+        padding: 0px; }
         .footercuerpo .footerrow footer nav .listafooter {
           list-style-type: none;
           font-size: large;
@@ -133,7 +135,8 @@
 .paginaprincipal .rowparatitulo {
   display: flex;
   justify-content: space-around;
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 0px; }
   .paginaprincipal .rowparatitulo .titulomainindex {
     width: 1000px;
     padding-top: 125px;
@@ -226,8 +229,8 @@
     width: 60px; }
   .carritomain .tucarrito {
     padding-top: 50px;
-    height: 100%;
-    padding-bottom: 300px; }
+    padding-bottom: 300px;
+    height: 100%; }
 
 .maincontacto {
   display: flex;
